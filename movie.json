@@ -1,74 +1,83 @@
 [
 	{
 		"movieid": 1,	
-		"title": "string",	
-		"info": "string",		
-		"premier": "string",		
-		"rating": "siffra",	
-		"conspiracy": "string"	
+		"title": "Aladdin",	
+		"info": "Sultanens vackra dotter, prinsessan Jasmine, har allt man kan tänka sig. Utom frihet. En natt rymmer hon från palatset och träffar den fattige men godhjärtade pojken Aladdin. Innan de vet ordet av är de förälskade i varandra.",		
+		"premier": "Premiär: 25 november 1992",		
+		"rating": 8.0,	
+		"conspiracy": "En av de mest kända Aladdin-fanteorierna som cirkulerar på internet säger att historien utspelar sig i en postapokalyptisk värld. Oavsett om Anden verkligen orsakade en zombieapokalyps, eller om det var någon annan katastrofal händelse, kan det vara så att Aladdin faktiskt utspelar sig i framtiden.",
+        "Img": ""
     },
     {
 		"movieid": 2,	
-		"title": "string",	
-		"info": "string",		
-		"premier": "string",		
-		"rating": "siffra",	
-		"conspiracy": "string"	
+		"title": "Trassel",	
+		"info": "Flickan Rapunzel sitter fast i sitt fängelsetorn, men med hjälp av sitt över 20 meter långa, magiska, gyllene hår och en charmig bandit lyckas hon fly.",		
+		"premier": "Premiär 4 februari 2011",		
+		"rating": 7.0,	
+		"conspiracy": "En viral teori om trassel är att filmen förutspådde coronaviruset. Inte bara låste Rapunzels låtsasmamma säkert borta henne från samhället i sitt ikoniska torn, utan staden hon gömde sig från hette Corona. Inte nog med att Trassels handlingslinje är kusligt lik den corona pandemin, filmen hade även några bra tips för hur man överlever självisolering. Från matlagning och städning till målning och till och med buktalande, Rapunzel framstår som nöjd i sitt eget företag. <br> Däremot är det ett flertal som tror att Corona har en annan innebörd: Corona är latin för 'krona'. Vad tror ni?",
+        "Img": ""	
     },
     {
 		"movieid": 3,	
-		"title": "string",	
-		"info": "string",		
-		"premier": "string",		
-		"rating": "siffra",	
-		"conspiracy": "string"	
+		"title": "Lilo and Stitch",	
+		"info": "Greppa närmaste surfbräda och häng med till det sköna, gröna Hawaii på ett svindlande äventyr tillsammans med Lilo och Stitch.",		
+		"premier": "Premiär 6 september 2002 ",		
+		"rating": 7.3,	
+		"conspiracy": "Det finns en teori om att ett budskap om ras är gömt i ett av filmens mer oskyldiga skämt. Lilo verkar tycka om att ta bilder på turisterna som kommer för att besöka ön. Enligt teoretikern var detta element en del av en skuren handlingslinje som skulle ha grävt in i det märkliga förhållandet mellan Hawaiianer och vita turister. Vissa turister fotograferar öbor som om de befinner sig i en djurpark, och Lilo var ursprungligen menad att vända den här berättelsen genom att fotografera turisterna istället.",
+        "Img": ""	
     },
     {
 		"movieid": 4,	
-		"title": "string",	
-		"info": "string",		
-		"premier": "string",		
-		"rating": "siffra",	
-		"conspiracy": "string"	
+		"title": "Lilla Sjöjungfrun",	
+		"info": "Sjöjungfrun Ariel är dotter till havets kung Triton, som är av åsikten att människor är farliga. Ariel vägrar tro det och besöker i hemlighet förlista skepp för att hitta människosaker. Triton upptäcker det och blir ursinnig och förbjuder henne att vara uppe vid ytan.",		
+		"premier": "Premiär: 13 november 1989",		
+		"rating": 7.6,	
+		"conspiracy": "En teori påstår att Ariel är schizofren. Rösterna i hennes huvud är Flounder och Sebastian. De säger till henne att världen är bättre inuti hennes huvud, alltså under havet. Hon längtar efter att vara 'normal', eller en del av den världen. Hennes far, Trident, är överbeskyddande på grund av hennes schizofreni. Ursula är verkligen Ariels läkare. Hon ger Ariel medicin för att stoppa rösterna i hennes huvud, vilket ger henne ben. Men eftersom hon har levt i sin egen värld vet hon inte hur man kommunicerar med normala människor, därför kan hon inte prata. Eric är egentligen en sjuksköterska som hon blir besatt av. Ariel utvecklar idén att Ursula försöker stjäla Erica från henne, det är när Ursula förvandlar sig till en vacker kvinna för att försöka locka bort Eric från Ariel. Därför slutar hon ta sina tabletter så att hon går tillbaka till sin egen värld, tillbaka till havet. Eric övertalar sedan Ariel att påbörja behandlingen igen och hon lär sig hur man lever i den verkliga världen med hjälp av Eric, detta är när Ariel får sina ben, röst och gifter sig med Eric, och lever sedan lycklig i alla sina dagar.",
+        "Img": ""	
     },
     {
 		"movieid": 5,	
-		"title": "string",	
-		"info": "string",		
-		"premier": "string",		
-		"rating": "siffra",	
-		"conspiracy": "string"	
+		"title": "Lejonkungen",	
+		"info": "Lejonungen Simba kan inte vänta på att bli Lejonkungen Simba. Men vägen dit är lång. Först måste han växa upp och lära sig att ta ansvaret som följer med kungatiteln. Sedan måste han klara alla faror som lurar på en blivande kung.",		
+		"premier": "Premiär: 12 juni 1994",		
+		"rating": 7.8,	
+		"conspiracy": "Det sägs har upptäckts bevis för att Scar ska ha ätit upp Mustafa. Efter att Mufasa har räddat sin son blir han skadad och kämpar för att klättra tillbaka uppför klippan. Scar upptäcker sin bror, som ber för sitt liv. Istället genomborrar Scar Mufasas tassar med sina klor och hånande viskar han 'länge leve kungen' innan han kastar sin bror från klippan. Mufasa faller ner i ravinen och trampas ihjäl av hyenor. Vad som sedan händer med Mufasas kropp vet man inte säkert men det sägs i filmen att han blir uppäten av hyenorna, men det som inte ifrågasätts är att hyenor inte äter lejon. Det finns faktiskt inget annat djur förutom lejon som äter lejon. Det finns ett klipp i filme där Scar hånfullt tar upp och pratar med vad som ser ut att vara en lejon skalle. Kan det vara Scar som åt sin egen bror?",
+        "Img": ""
     },
     {
 		"movieid": 6,	
-		"title": "string",	
-		"info": "string",		
-		"premier": "string",		
-		"rating": "siffra",	
-		"conspiracy": "string"	
+		"title": "Peter Pan",	
+		"info": "Disney-film om den flygande pojken Peter Pan, som bor i landet Ingenstans tillsammans med älvan Tingeling. Men där finns också den fruktade sjörövaren Kapten Krok…",		
+		"premier": "Premiär: 5 februari 1953",		
+		"rating": 7.3,	
+		"conspiracy": "I original historien är Peter pan egentligen skurken, Captain Hook lades till senare i disney versionen. Peter Pan brukade stjäla barn för att kunna leka med dem för alltid och när dem bestämmer att dem inte vill vara barn längre dödar han dem och skickar dem till det efterlivet. Andra teorier säger att det är älvorna som dödar barnen när dem känner sig uttråkade. Captain Hook och de andra piraterna fick veta vad Peter Pan höll på med så dem rymde för att kunna växa upp och bli vuxna och försöker nu stoppa Peter Pan från det han håller på med.",
+        "Img": ""	
     },
     {
 		"movieid": 7,	
-		"title": "string",	
+		"title": "Upp",	
 		"info": "string",		
 		"premier": "string",		
 		"rating": "siffra",	
-		"conspiracy": "string"	
+		"conspiracy": "string",
+        "Img": ""	
     },
     {
 		"movieid": 8,	
-		"title": "string",	
+		"title": "Toy Story",	
 		"info": "string",		
 		"premier": "string",		
 		"rating": "siffra",	
-		"conspiracy": "string"	
+		"conspiracy": "string",
+        "Img": ""	
     },
     {
 		"movieid": 9,	
-		"title": "string",	
+		"title": "Pinocchio",	
 		"info": "string",		
 		"premier": "string",		
 		"rating": "siffra",	
-		"conspiracy": "string"	
+		"conspiracy": "string",	
+        "Img": ""
     }
 ]
