@@ -1,0 +1,74 @@
+[
+	{
+		"movieid": 1,	
+		"title": "string",	
+		"info": "string",		
+		"premier": "string",		
+		"rating": "siffra",	
+		"conspiracy": "string"	
+    },
+    {
+		"movieid": 2,	
+		"title": "string",	
+		"info": "string",		
+		"premier": "string",		
+		"rating": "siffra",	
+		"conspiracy": "string"	
+    },
+    {
+		"movieid": 3,	
+		"title": "string",	
+		"info": "string",		
+		"premier": "string",		
+		"rating": "siffra",	
+		"conspiracy": "string"	
+    },
+    {
+		"movieid": 4,	
+		"title": "string",	
+		"info": "string",		
+		"premier": "string",		
+		"rating": "siffra",	
+		"conspiracy": "string"	
+    },
+    {
+		"movieid": 5,	
+		"title": "string",	
+		"info": "string",		
+		"premier": "string",		
+		"rating": "siffra",	
+		"conspiracy": "string"	
+    },
+    {
+		"movieid": 6,	
+		"title": "string",	
+		"info": "string",		
+		"premier": "string",		
+		"rating": "siffra",	
+		"conspiracy": "string"	
+    },
+    {
+		"movieid": 7,	
+		"title": "string",	
+		"info": "string",		
+		"premier": "string",		
+		"rating": "siffra",	
+		"conspiracy": "string"	
+    },
+    {
+		"movieid": 8,	
+		"title": "string",	
+		"info": "string",		
+		"premier": "string",		
+		"rating": "siffra",	
+		"conspiracy": "string"	
+    },
+    {
+		"movieid": 9,	
+		"title": "string",	
+		"info": "string",		
+		"premier": "string",		
+		"rating": "siffra",	
+		"conspiracy": "string"	
+    }
+]
