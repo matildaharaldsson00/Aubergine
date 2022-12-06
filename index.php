@@ -14,6 +14,7 @@ ini_set("display_errors", 1);
     <link rel="stylesheet" href="movie.css" />
     <link rel="stylesheet" href="login.css" />
     <link rel="stylesheet" href="start.css" />
+    <link rel="stylesheet" href="welcome.css" />
     <title>Disney Mystery Club</title>
   </head>
   <body></body>
