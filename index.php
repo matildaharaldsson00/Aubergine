@@ -18,6 +18,7 @@ require_once = "functions.php";
     <link rel="stylesheet" href="login.css" />
     <link rel="stylesheet" href="start.css" />
     <link rel="stylesheet" href="welcome.css" />
+    <link rel="stylesheet" href="movies.css" />
     <title>Disney Mystery Club</title>
   </head>
   <body>
