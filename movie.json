@@ -59,7 +59,7 @@
 		"info": "string",		
 		"premier": "string",		
 		"rating": "siffra",	
-		"conspiracy": "string",
+		"conspiracy": "Det finns en känslomässig teori om att Carl är död hela tiden och hans resa till Paradise Falls är hans inflyttning i livet efter detta. Russell är en ängel som försöker få sina vingar (Wilderness Explorer-märket). På andra håll är Charles Muntz en fallen ängel som vill släpa Carl till underjorden med sina helveteshundar.",
         "Img": ""	
     },
     {
@@ -68,7 +68,7 @@
 		"info": "string",		
 		"premier": "string",		
 		"rating": "siffra",	
-		"conspiracy": "string",
+		"conspiracy": "Andys pappa gick bort när han var väldigt ung och Woody är faktiskt hans pappas ande som vakar över honom sedan han var liten tills han en dag inte behövde honom längre.",
         "Img": ""	
     },
     {
@@ -77,7 +77,7 @@
 		"info": "string",		
 		"premier": "string",		
 		"rating": "siffra",	
-		"conspiracy": "string",	
-        "Img": ""
+		"conspiracy": "Toker är Gipetto, Det finns en slående likhet mellan de två, och en övertygande bakgrund. Det fanns alltid 6 dvärgar. När de vandrade runt hittade de en bebis och trodde att det var en dvärg. Toker växte upp med den här familjen som höll honom tillbaka (som slog honom, fick honom att göra det hårda arbetet). När han blev längre än dem, sparkade de ut honom och han gick hela vägen till Italien, där han började bygga upp sitt eget hem",
+		"Img": ""
     }
 ]
