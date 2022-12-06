@@ -1,5 +1,8 @@
 <?php
 ini_set("display_errors", 1);
+
+$filenameMovies = "movie.php";
+require_once = "functions.php";
 ?>
 
 <!DOCTYPE html>
@@ -17,5 +20,7 @@ ini_set("display_errors", 1);
     <link rel="stylesheet" href="welcome.css" />
     <title>Disney Mystery Club</title>
   </head>
-  <body></body>
+  <body>
+    
+  </body>
 </html>
