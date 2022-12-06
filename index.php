@@ -21,6 +21,17 @@ require_once = "functions.php";
     <title>Disney Mystery Club</title>
   </head>
   <body>
-    
+      <wrapper id="loginPage">
+      </wrapper>
+
+      <wrapper id="moviesPage">
+      </wrapper>
+
+      <wrapper id="currentMoviePage">
+      </wrapper>
+
+      <wrapper id="profilePage">
+      </wrapper>
+
   </body>
 </html>
