@@ -3,9 +3,7 @@ ini_set("display_errors", 1);
 
 //status kod 
 
-$filenameMovies = "movie.json";
-$filenameComments = "comments.json";
-$filenameUsers = "users.json";
+$filename = "users.json";
 
 function sendJSON ($data, $statusCode = 200) {
     header("Content-Type: application/json");
