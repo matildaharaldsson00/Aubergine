@@ -56,27 +56,27 @@
     {
 		"movieid": 7,	
 		"title": "Upp",	
-		"info": "string",		
-		"premier": "string",		
-		"rating": "siffra",	
+		"info": "78-årige Carl Fredricksen reser till Paradise Falls i sitt hus utrustat med ballonger och tar oavsiktligt med sig en ung fripassagerare.",		
+		"premier": "Premiär: 16 maj 2009",		
+		"rating": 8.3,	
 		"conspiracy": "Det finns en känslomässig teori om att Carl är död hela tiden och hans resa till Paradise Falls är hans inflyttning i livet efter detta. Russell är en ängel som försöker få sina vingar (Wilderness Explorer-märket). På andra håll är Charles Muntz en fallen ängel som vill släpa Carl till underjorden med sina helveteshundar.",
         "Img": ""	
     },
     {
 		"movieid": 8,	
 		"title": "Toy Story",	
-		"info": "string",		
-		"premier": "string",		
-		"rating": "siffra",	
+		"info": "En cowboydocka blir djupt hotad och avundsjuk när en ny rymdmans actionfigur ersätter honom som toppleksak i en pojkes sovrum.",		
+		"premier": "Premiär: 19 november 1995",		
+		"rating": 8.3,	
 		"conspiracy": "Andys pappa gick bort när han var väldigt ung och Woody är faktiskt hans pappas ande som vakar över honom sedan han var liten tills han en dag inte behövde honom längre.",
         "Img": ""	
     },
     {
 		"movieid": 9,	
 		"title": "Pinocchio",	
-		"info": "string",		
-		"premier": "string",		
-		"rating": "siffra",	
+		"info": "En levande docka, med hjälp av en syrsa som sitt samvete, måste visa sig värdig att bli en riktig pojke.",		
+		"premier": "Premiär: 7 februari 1940",		
+		"rating": "7.5",	
 		"conspiracy": "Toker är Gipetto, Det finns en slående likhet mellan de två, och en övertygande bakgrund. Det fanns alltid 6 dvärgar. När de vandrade runt hittade de en bebis och trodde att det var en dvärg. Toker växte upp med den här familjen som höll honom tillbaka (som slog honom, fick honom att göra det hårda arbetet). När han blev längre än dem, sparkade de ut honom och han gick hela vägen till Italien, där han började bygga upp sitt eget hem",
 		"Img": ""
     }
