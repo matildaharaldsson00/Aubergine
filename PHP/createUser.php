@@ -1,54 +1,92 @@
-<?php 
+<?php
 
 ini_set("display_errors", 1);
+$filename = "user.json";
 
-require_once "PHP/functions.php";
+// if file user.json does not exist create it!
+if (!file_exists($filename)) {
+    $requestMethod = $_SERVER["REQUEST_METHOD"];
+    header("Content-Type: application/json");
+    file_put_contents($filename, json_encode([]));
+} 
 
-$filename = "users.json";
-$requestMethod = $_SERVER["REQUEST_METHOD"];
+if ($_SERVER["REQUEST_METHOD"] == "POST"){
 
-if ($requestMethod != "POST") {
-    $error = ["error" => "Invalid HTTP method! (Only POST is allowed)"];
-    sendJSON($error, 405);
-}
+    $currentUserJSON = file_get_contents($filename);
+    $currentUserData = json_decode($currentUserJSON, true);
+    
+    // Get request (post) data and decode from JSOn to PHP
+    $requestJSON = file_get_contents("php://input");
+    $requestData = json_decode($requestJSON, true);
 
-$users = [];
-
-if (file_exists($filename)) {
-    $json = file_get_contents($filename);
-    $users = json_decode($json, true);
-}
-
-$requestJSON = file_get_contents("php://input");
-$requestData = json_decode($requestJSON, true);
-
-if (!isset($requestData["username"], $requestData["password"])) {
-    $error = ["error" => "Bad request!"];
-    sendJson($error, 400);
-}
-
-$username = $requestData["username"];
-$password = $requestData["password"];
-
-if ($username == "" || $password = "") {
-    $error = ["error" => "Bad request!"];
-    sendJson($error, 400);
-}
-
-$highestId = 0;
-foreach ($users as $user) {
-    if ($user["userId"] > $highestId) {
-        $highestId = $user["id"];
+    // If one of the parameters is missing 
+   //$requestData[$name], $requestData[$breed], $requestData[$age]
+    
+    if (!isset($requestData["username"], $requestData["password"])){
+        http_response_code(400);
     }
-}
+    else { 
+        $highestId = 0;
+        foreach ($currentUserData as $user){
+            if($user["id"] > $highestId){
+                $highestId = $user["id"];
+            }
+        }
+        $id = $highestId + 1;
+        //the other parameters...
+        $username = $requestData["username"];
+        $password = $requestData["password"];
 
-$nextId = $highestId + 1;
+        $newUser = ["id" => $id, "username" => $username, "password" => $password];
+        $currentUserData[] = $newUser;
+        $json = json_encode($currentUserData, JSON_PRETTY_PRINT);
+        file_put_contents($filename, $json);
+        echo json_encode($newUser);
+    
+    } 
 
-$newUser = ["userId" => $nextId, "username" => $username, "password" => $password];
-$users[] = $newUser;
-$json = json_decode($user, JSON_PRETTY_PRINT);
-file_put_contents($filename, $json);
-
-sendJSON($newUser);
+} 
 
 ?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            height: 100vh;
+            margin:0;
+            text-align: center;
+            justify-content: center;
+        }
+        #create{
+            margin:0;
+            display: flex;
+            text-align: center;
+            justify-content: center;  
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Users</h1>
+        <div>
+            <form id="create" method="POST">
+                <label"><h4>Registerara ny användare</h4></label>
+                <input type="text" placeholder="Skriv ett användarnamn" id="username">
+                <input type="password" placeholder="Skriv ett lösenord" id="password">
+                <input type="submit" value="Send" id="submit">
+            </form>
+        </div>
+        <div id="resultat">
+
+        </div>
+    </main>
+</body>
+</html>
