@@ -2,7 +2,7 @@
 ini_set("display_errors", 1);
 
 $filenameMovies = "movie.php";
-require_once = "functions.php";
+require_once "PHP/functions.php";
 ?>
 
 <!DOCTYPE html>
@@ -22,6 +22,8 @@ require_once = "functions.php";
     <title>Disney Mystery Club</title>
   </head>
   <body>
+
+  <?php require_once "PHP/login.php"; ?>
       <wrapper id="loginPage">
       </wrapper>
 
