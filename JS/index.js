@@ -1,31 +1,25 @@
+"use strict";
+//When the user clicks submit the function CreateNewUser 
+//is called which adds the new user to the "user.json" database
+document.querySelector("#submit").addEventListener("click", CreateNewUser);
 
-// const form = document.getElementById("loginForm");
-
-form.addEventListener("submit", function(event) {
+function CreateNewUser (event) {
+    //Inbyggd funktion som ser till att sidan inte laddar om  
     event.preventDefault();
-
-    const formData = new FormData(form);
-
-    const object = {};
-    formData.forEach((value, key) => (object[key] = value));
-    const json = JSON.stringify(object);
-
-    const add_rqst = new Request("createUser.php", {
-        method: "POST",
-        headers: {"Content-type": "application/json; charset=UTF-8"},
-        body: json
-    });
-
-    fetch(add_rqst)
-        .then(response => response.json())
-        .then(resource => {
-            console.log(resource)
-            
-            if(resource.erro) {
-                alert("An error occured, try again!")
-            } else {
-                document.getElementById("username").value = "";
-                document.getElementById("password").value = "";
-            }
-        });
-});
+    //
+    let username = document.querySelector("#username").value;
+    let password = document.querySelector("#password").value;
+    
+    const request = new Request("PHP/createUser.php"); 
+    fetch(request, {
+        body: JSON.stringify({username: username, password: password}),
+        header: {"Content-Type": "application/json"},
+        method: "POST"
+    })
+        .then(r => r.json())
+        .then(resultat => {
+            document.querySelector("#username").value = "";
+            document.querySelector("#username").value = "";
+        })
+     
+}
