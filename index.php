@@ -23,7 +23,7 @@ require_once "PHP/functions.php";
   </head>
   <body>
 
-  <?php require_once "PHP/login.php"; ?>
+  <?php require_once "PHP/registrera.php"; ?>
       <wrapper id="loginPage">
       </wrapper>
 
@@ -36,5 +36,6 @@ require_once "PHP/functions.php";
       <wrapper id="profilePage">
       </wrapper>
 
+      <script src="JS/index.js"></script>
   </body>
 </html>
