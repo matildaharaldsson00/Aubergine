@@ -23,21 +23,21 @@ require_once "PHP/functions.php";
   </head>
   <body>
 
- 
+    <wrapper id="loginPage">
+      <?php require_once "PHP/login.php";?>
+    </wrapper>
+
+    <wrapper id="registerPage">
     <?php require_once "PHP/createUser.php";?>
+    </wrapper>
 
-      <wrapper id="loginPage">
-      </wrapper>
+    <wrapper id="currentMoviePage">
+    </wrapper>
 
-      <wrapper id="moviesPage">
-      </wrapper>
+    <wrapper id="profilePage">
+    </wrapper>
 
-      <wrapper id="currentMoviePage">
-      </wrapper>
 
-      <wrapper id="profilePage">
-      </wrapper>
-
-      <script src="JS/index.js"></script>
+    
   </body>
 </html>

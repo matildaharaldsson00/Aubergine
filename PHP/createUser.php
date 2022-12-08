@@ -55,38 +55,25 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/register.css">
     <title>Document</title>
-
-    <style>
-        body{
-            height: 100vh;
-            margin:0;
-            text-align: center;
-            justify-content: center;
-        }
-        #create{
-            margin:0;
-            display: flex;
-            text-align: center;
-            justify-content: center;  
-        }
-
-    </style>
 </head>
 <body>
     <main>
-        <h1>Users</h1>
+
         <div>
-            <form id="create" method="POST">
-                <label"><h4>Registerara ny användare</h4></label>
-                <input type="text" placeholder="Skriv ett användarnamn" id="username">
-                <input type="password" placeholder="Skriv ett lösenord" id="password">
+            <form id="create" class="hidden" method="POST">
+                <label"><h3>Registerara ny användare</h3></label>
+                <label>Användarnamn</label>
+                <input type="text" placeholder="Skriv ett användarnamn" id="createUsername">
+                <label>Lösenord</label>
+                <input type="password" placeholder="Skriv ett lösenord" id="CreatePassword">
                 <input type="submit" value="Send" id="submit">
             </form>
         </div>
-        <div id="resultat">
-
-        </div>
+        
     </main>
+    <script src="JS/index.js"></script>
+    
 </body>
 </html>
