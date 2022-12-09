@@ -19,16 +19,17 @@ require_once "PHP/functions.php";
     <link rel="stylesheet" href="CSS/login.css">
     <link rel="stylesheet" href="CSS/welcome.css">
     <link rel="stylesheet" href="CSS/movies.css">
+    <link rel="stylesheet" href="CSS/index.css">
     <title>Disney Mystery Club</title>
   </head>
   <body>
 
-    <wrapper id="loginPage">
+    <wrapper id="loginPage"  class="hideloginPage">
       <?php require_once "PHP/login.php";?>
     </wrapper>
 
-    <wrapper id="registerPage">
-    <?php require_once "PHP/createUser.php";?>
+    <wrapper id="registerPage" class="hideregisterPage">
+      <?php require_once "PHP/createUser.php";?>
     </wrapper>
 
     <wrapper id="currentMoviePage">
@@ -37,6 +38,7 @@ require_once "PHP/functions.php";
     <wrapper id="profilePage">
     </wrapper>
 
+    <script src="JS/login.js"></script>
 
     
   </body>

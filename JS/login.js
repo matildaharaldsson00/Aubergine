@@ -1,11 +1,16 @@
-document.querySelector("#registerNewUser").addEventListener("click", onClick);
+document.getElementById("registerNewUser").addEventListener("click", onClick);
 
 
-function onClick () {
-    let register =  document.querySelector("#create");
-    register.classList.remove("hidden");
+function onClick() {
+    console.log("hej")
+    var x = document.querySelector(".hideregisterPage");
+    if (x.style.display !== "block") {
+        x.style.display = "block";
+    } 
 
-    let login =  document.querySelector("#loginForm");
-    login.classList.add("hidden");
-    
+    var y = document.querySelector(".hideloginPage");
+    if (y.style.display !== "none") {
+        y.style.display = "none";
+    } 
 }
+
