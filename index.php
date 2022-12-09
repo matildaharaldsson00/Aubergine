@@ -32,7 +32,7 @@ require_once "PHP/functions.php";
       <?php require_once "PHP/createUser.php";?>
     </wrapper>
 
-    <wrapper id="allMovies">
+    <wrapper id="allMovies" class="hideMovies">
       <?php require_once "PHP/readMovies.php";?>
     </wrapper>
 

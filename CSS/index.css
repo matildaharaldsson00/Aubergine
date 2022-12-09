@@ -5,3 +5,7 @@
 .hideloginPage{
     display: block;
 }
+
+.hideMovies{
+    display: none;
+}
