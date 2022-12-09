@@ -32,6 +32,10 @@ require_once "PHP/functions.php";
       <?php require_once "PHP/createUser.php";?>
     </wrapper>
 
+    <wrapper id="allMovies">
+      <?php require_once "PHP/readMovies.php";?>
+    </wrapper>
+
     <wrapper id="currentMoviePage">
     </wrapper>
 
@@ -39,7 +43,6 @@ require_once "PHP/functions.php";
     </wrapper>
 
     <script src="JS/login.js"></script>
-
     
   </body>
 </html>
