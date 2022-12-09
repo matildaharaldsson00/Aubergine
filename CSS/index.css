@@ -1,0 +1,7 @@
+.hideregisterPage{
+    display: none;
+}
+
+.hideloginPage{
+    display: block;
+}
