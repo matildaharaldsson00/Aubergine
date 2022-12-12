@@ -6,7 +6,7 @@ $requestMethod = $_SERVER["REQUEST_METHOD"];
 $onlyMethod = "DELETE";
 
 $user = [];
-$fileName = "dogs.json";
+$fileName = "user.json";
 
 if ($requestMethod != $onlyMethod) {
     header("Content-Type: application/json");
@@ -17,7 +17,7 @@ if ($requestMethod != $onlyMethod) {
 
 if (file_exists("$fileName")) {
     $json = file_get_contents("$fileName");
-    $dogs = json_decode($json, true);
+    $user = json_decode($json, true);
 }
 
 $requestJson = file_get_contents("php://input");
@@ -31,10 +31,10 @@ if($requestMethod == "DELETE") {
 
     $id = $requestData["id"];
 
-    foreach($dogs as $number => $dog) {
-        if($dog["id"] == $id) {
-            array_splice($dogs, $number, 1);
-            $json = json_encode($dogs, JSON_PRETTY_PRINT);
+    foreach($user as $users => $user) {
+        if($user["id"] == $id) {
+            array_splice($user, $users, 1);
+            $json = json_encode($user, JSON_PRETTY_PRINT);
             file_put_contents("$fileName", $json);
             sendJSON($id);
         }
