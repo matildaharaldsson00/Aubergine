@@ -1,0 +1,11 @@
+.hideregisterPage{
+    display: none;
+}
+
+.hideloginPage{
+    display: block;
+}
+
+.hideMovies{
+    display: none;
+}
