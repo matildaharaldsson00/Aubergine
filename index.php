@@ -1,11 +1,3 @@
-<?php
-/*ini_set("display_errors", 1);
-
-$filenameMovies = "movie.php";
-require_once "PHP/functions.php";
-*/
-?>
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
