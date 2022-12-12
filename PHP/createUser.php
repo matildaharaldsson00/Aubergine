@@ -63,7 +63,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
 
         <div>
             <form id="create" class="hidden" method="POST">
-                <label"><h3>Registerara ny användare</h3></label>
+                <label"><h3>Registrera ny användare</h3></label>
                 <label>Användarnamn</label>
                 <input type="text" placeholder="Skriv ett användarnamn" id="createUsername">
                 <label>Lösenord</label>
