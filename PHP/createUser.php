@@ -67,7 +67,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
                 <label>Användarnamn</label>
                 <input type="text" placeholder="Skriv ett användarnamn" id="createUsername">
                 <label>Lösenord</label>
-                <input type="password" placeholder="Skriv ett lösenord" id="CreatePassword">
+                <input type="password" placeholder="Skriv ett lösenord" id="createPassword">
                 <input type="submit" value="Send" id="submit">
                 <p id="message"></p>
             </form>

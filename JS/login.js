@@ -4,7 +4,7 @@ document.getElementById("registerNewUser").addEventListener("click", onClick);
 function showMovies (event) {
     event.preventDefault()
     //välkomen försivnner och filmerna visas
-    var b = document.querySelector(".hideMovies");
+    var b = document.querySelector(".allMovies");
     if (b.style.display !== "block") {
         b.style.display = "block";
     } 
@@ -16,6 +16,8 @@ function showMovies (event) {
 
     
 }
+
+
 
 function onClick(event) {
     //Ser till att sidan inte laddas om när man skickar ett formulär.
