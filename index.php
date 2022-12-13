@@ -24,16 +24,28 @@
     </wrapper>
 
     <wrapper id="allMovies" class="hideMovies">
-      <?php //require_once "PHP/readMovies.php";?>
-    </wrapper>
+      <header>
+        <div>
+          <p id="newUser"></p>
+          <img src="Bilder/user.png" alt="user" id="user">
+        </div>
+      </header>
 
-    <wrapper id="currentMoviePage">
+      <h1 id="titleh1">Utfroska Konspirationsteorier om Disney</h1>
+      <div class="center">
+        <div id="movieGrid"></div>
+      <div>
+    </wrapper>
+   
+    <wrapper id="currentMoviePage" class="hideMovie">
+      <p>en film</p>
     </wrapper>
 
     <wrapper id="profilePage">
     </wrapper>
 
     <script src="JS/login.js"></script>
+    <script src="JS/movies.js"></script>
     
   </body>
 </html>

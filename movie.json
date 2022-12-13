@@ -6,7 +6,7 @@
 		"premier": "Premiär: 25 november 1992",		
 		"rating": 8.0,	
 		"conspiracy": "En av de mest kända Aladdin-fanteorierna som cirkulerar på internet säger att historien utspelar sig i en postapokalyptisk värld. Oavsett om Anden verkligen orsakade en zombieapokalyps, eller om det var någon annan katastrofal händelse, kan det vara så att Aladdin faktiskt utspelar sig i framtiden.",
-        "Img": "../Bilder/Aladdin.jpg"
+        "img": "../Bilder/Aladdin.jpg"
     },
     {
 		"movieid": 2,	
@@ -15,7 +15,7 @@
 		"premier": "Premiär 4 februari 2011",		
 		"rating": 7.0,	
 		"conspiracy": "En viral teori om trassel är att filmen förutspådde coronaviruset. Inte bara låste Rapunzels låtsasmamma säkert borta henne från samhället i sitt ikoniska torn, utan staden hon gömde sig från hette Corona. Inte nog med att Trassels handlingslinje är kusligt lik den corona pandemin, filmen hade även några bra tips för hur man överlever självisolering. Från matlagning och städning till målning och till och med buktalande, Rapunzel framstår som nöjd i sitt eget företag. <br> Däremot är det ett flertal som tror att Corona har en annan innebörd: Corona är latin för 'krona'. Vad tror ni?",
-        "Img": "../Bilder/trassel.jpeg"	
+        "img": "../Bilder/trassel.jpeg"	
     },
     {
 		"movieid": 3,	
@@ -24,7 +24,7 @@
 		"premier": "Premiär 6 september 2002 ",		
 		"rating": 7.3,	
 		"conspiracy": "Det finns en teori om att ett budskap om ras är gömt i ett av filmens mer oskyldiga skämt. Lilo verkar tycka om att ta bilder på turisterna som kommer för att besöka ön. Enligt teoretikern var detta element en del av en skuren handlingslinje som skulle ha grävt in i det märkliga förhållandet mellan Hawaiianer och vita turister. Vissa turister fotograferar öbor som om de befinner sig i en djurpark, och Lilo var ursprungligen menad att vända den här berättelsen genom att fotografera turisterna istället.",
-        "Img": "../Bilder/LiloAndStitch.jpeg"	
+        "img": "../Bilder/LiloAndStitch.jpeg"	
     },
     {
 		"movieid": 4,	
@@ -33,7 +33,7 @@
 		"premier": "Premiär: 13 november 1989",		
 		"rating": 7.6,	
 		"conspiracy": "En teori påstår att Ariel är schizofren. Rösterna i hennes huvud är Flounder och Sebastian. De säger till henne att världen är bättre inuti hennes huvud, alltså under havet. Hon längtar efter att vara 'normal', eller en del av den världen. Hennes far, Trident, är överbeskyddande på grund av hennes schizofreni. Ursula är verkligen Ariels läkare. Hon ger Ariel medicin för att stoppa rösterna i hennes huvud, vilket ger henne ben. Men eftersom hon har levt i sin egen värld vet hon inte hur man kommunicerar med normala människor, därför kan hon inte prata. Eric är egentligen en sjuksköterska som hon blir besatt av. Ariel utvecklar idén att Ursula försöker stjäla Erica från henne, det är när Ursula förvandlar sig till en vacker kvinna för att försöka locka bort Eric från Ariel. Därför slutar hon ta sina tabletter så att hon går tillbaka till sin egen värld, tillbaka till havet. Eric övertalar sedan Ariel att påbörja behandlingen igen och hon lär sig hur man lever i den verkliga världen med hjälp av Eric, detta är när Ariel får sina ben, röst och gifter sig med Eric, och lever sedan lycklig i alla sina dagar.",
-        "Img": "../Bilder/Ariel.jpg"	
+        "img": "../Bilder/Ariel.jpg"	
     },
     {
 		"movieid": 5,	
@@ -42,7 +42,7 @@
 		"premier": "Premiär: 12 juni 1994",		
 		"rating": 7.8,	
 		"conspiracy": "Det sägs har upptäckts bevis för att Scar ska ha ätit upp Mustafa. Efter att Mufasa har räddat sin son blir han skadad och kämpar för att klättra tillbaka uppför klippan. Scar upptäcker sin bror, som ber för sitt liv. Istället genomborrar Scar Mufasas tassar med sina klor och hånande viskar han 'länge leve kungen' innan han kastar sin bror från klippan. Mufasa faller ner i ravinen och trampas ihjäl av hyenor. Vad som sedan händer med Mufasas kropp vet man inte säkert men det sägs i filmen att han blir uppäten av hyenorna, men det som inte ifrågasätts är att hyenor inte äter lejon. Det finns faktiskt inget annat djur förutom lejon som äter lejon. Det finns ett klipp i filme där Scar hånfullt tar upp och pratar med vad som ser ut att vara en lejon skalle. Kan det vara Scar som åt sin egen bror?",
-        "Img": "../Bilder/lionking.jpg"
+        "img": "../Bilder/lionking.jpg"
     },
     {
 		"movieid": 6,	
@@ -51,7 +51,7 @@
 		"premier": "Premiär: 5 februari 1953",		
 		"rating": 7.3,	
 		"conspiracy": "I original historien är Peter pan egentligen skurken, Captain Hook lades till senare i disney versionen. Peter Pan brukade stjäla barn för att kunna leka med dem för alltid och när dem bestämmer att dem inte vill vara barn längre dödar han dem och skickar dem till det efterlivet. Andra teorier säger att det är älvorna som dödar barnen när dem känner sig uttråkade. Captain Hook och de andra piraterna fick veta vad Peter Pan höll på med så dem rymde för att kunna växa upp och bli vuxna och försöker nu stoppa Peter Pan från det han håller på med.",
-        "Img": "../Bilder/peterpan.jpeg"	
+        "img": "../Bilder/peterpan.jpeg"	
     },
     {
 		"movieid": 7,	
@@ -60,7 +60,7 @@
 		"premier": "Premiär: 16 maj 2009",		
 		"rating": 8.3,	
 		"conspiracy": "Det finns en känslomässig teori om att Carl är död hela tiden och hans resa till Paradise Falls är hans inflyttning i livet efter detta. Russell är en ängel som försöker få sina vingar (Wilderness Explorer-märket). På andra håll är Charles Muntz en fallen ängel som vill släpa Carl till underjorden med sina helveteshundar.",
-        "Img": "../Bilder/Upp.jpeg"	
+        "img": "../Bilder/Upp.jpeg"	
     },
     {
 		"movieid": 8,	
@@ -69,7 +69,7 @@
 		"premier": "Premiär: 19 november 1995",		
 		"rating": 8.3,	
 		"conspiracy": "Andys pappa gick bort när han var väldigt ung och Woody är faktiskt hans pappas ande som vakar över honom sedan han var liten tills han en dag inte behövde honom längre.",
-        "Img": "../Bilder/toystory.jpg"	
+        "img": "../Bilder/toystory.jpg"	
     },
     {
 		"movieid": 9,	
@@ -78,6 +78,6 @@
 		"premier": "Premiär: 7 februari 1940",		
 		"rating": 7.5,	
 		"conspiracy": "Toker är Gipetto, Det finns en slående likhet mellan de två, och en övertygande bakgrund. Det fanns alltid 6 dvärgar. När de vandrade runt hittade de en bebis och trodde att det var en dvärg. Toker växte upp med den här familjen som höll honom tillbaka (som slog honom, fick honom att göra det hårda arbetet). När han blev längre än dem, sparkade de ut honom och han gick hela vägen till Italien, där han började bygga upp sitt eget hem",
-		"Img": "../Bilder/pinoccio.jpeg"
+		"img": "../Bilder/pinoccio.jpeg"
     }
 ]

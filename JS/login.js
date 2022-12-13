@@ -1,5 +1,22 @@
 document.getElementById("registerNewUser").addEventListener("click", onClick);
 
+//MovieGrid visas när användaren trycker på knappen om utforska teorier..
+function showMovies (event) {
+    event.preventDefault()
+    //välkomen försivnner och filmerna visas
+    var b = document.querySelector(".hideMovies");
+    if (b.style.display !== "block") {
+        b.style.display = "block";
+    } 
+
+    var t = document.querySelector("#Welcome");
+    if (t.style.display !== "none") {
+        t.style.display = "none";
+    } 
+
+    
+}
+
 function onClick(event) {
     //Ser till att sidan inte laddas om när man skickar ett formulär.
     event.preventDefault()

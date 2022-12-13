@@ -82,10 +82,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
         </div>
     </div>
 
-    <div id="movies">
-      <?php require_once "readMovies.php";?>
-    </div>
-
     <script src="JS/index.js"></script>
     
 </body>
