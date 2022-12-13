@@ -1,7 +1,7 @@
 <?php
 
 ini_set("display_errors", 1);
-$filename = "user.json";
+$filename = "../user.json";
 
 // if file user.json does not exist create it!
 if (!file_exists($filename)) {
@@ -69,10 +69,23 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
                 <label>Lösenord</label>
                 <input type="password" placeholder="Skriv ett lösenord" id="CreatePassword">
                 <input type="submit" value="Send" id="submit">
+                <p id="message"></p>
             </form>
         </div>
         
     </main>
+
+    <div id="Welcome">
+        <div>
+            <h2 id="name"></h2>
+            <button id="conspiracyTheoriesButton">Utforska konsperationsteorier här!</button>
+        </div>
+    </div>
+
+    <div id="movies">
+      <?php require_once "readMovies.php";?>
+    </div>
+
     <script src="JS/index.js"></script>
     
 </body>

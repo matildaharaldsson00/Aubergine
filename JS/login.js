@@ -1,6 +1,5 @@
 document.getElementById("registerNewUser").addEventListener("click", onClick);
 
-
 function onClick(event) {
     //Ser till att sidan inte laddas om när man skickar ett formulär.
     event.preventDefault()
@@ -17,6 +16,7 @@ function onClick(event) {
     } 
 }
 
+
 document.querySelector("#submitUser").addEventListener("click", login);
 
 function login (event) {
@@ -31,3 +31,5 @@ function login (event) {
             resource.id;
         })
 }
+
+

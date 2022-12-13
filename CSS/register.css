@@ -25,3 +25,24 @@ h3 {
     display: flex;
     justify-content: center;
 }
+
+#Welcome{
+    display: none;
+
+}
+
+#Welcome > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#conspiracyTheoriesButton{
+height: 150px;
+width: 300px;
+}
+
+#movies{
+    display: none;
+}

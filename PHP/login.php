@@ -7,13 +7,16 @@ $loginUser = [];
 if (isset($_GET["username"]) && isset($_GET["password"])) {
     $username = $_GET["username"];
     $password = $_GET["password"];
-    $json = file_get_contents("PHP/user.json");
+    $json = file_get_contents("../user.json");
     $users = json_decode($json, true);
 
     foreach ($users as $user) {
         $loginUser = $user[$username] && $user[$password];
     }
+
+   
 }
+
 
 // $filename = "PHP/user.json";
 // $requestMethod = $_SERVER["REQUEST_METHOD"];
@@ -52,6 +55,10 @@ if (isset($_GET["username"]) && isset($_GET["password"])) {
         <input type="submit" value="Send" id="submitUser">
         <input type="submit" value="Skapa konto" id="registerNewUser">
     </form>
+
+    <div id="WelcomeBack">
+        <h2>Välkommen tillbaka <?php //echo  $username ?></h2>
+    </div>
 
     <script src="JS/login.js"></script>
 </body>
