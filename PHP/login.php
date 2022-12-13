@@ -2,36 +2,21 @@
 
 require_once "functions.php";
 
-$loginUser = [];
+$method = $_SERVER["REQUEST_METHOD"];
 
-if (isset($_GET["username"]) && isset($_GET["password"])) {
-    $username = $_GET["username"];
-    $password = $_GET["password"];
-    $json = file_get_contents("../user.json");
-    $users = json_decode($json, true);
+$json = file_get_contents("user.json");
+$users = json_decode($json, true);
 
+if(isset($_GET["username"]) && ($_GET["password"])) {
     foreach ($users as $user) {
-        $loginUser = $user[$username] && $user[$password];
+        if ($user["username"] == $_GET["username"] && $user["password"] == $_GET["password"]) {
+            $logedinUser[] = $user;
+        }
     }
-
-   
+    header("Content-Type: application/json");
+    echo json_encode($logedinUser);
+    exit();
 }
-
-
-// $filename = "PHP/user.json";
-// $requestMethod = $_SERVER["REQUEST_METHOD"];
-
-// if ($requestMethod != "GET") {
-//     $error = ["error" => "Invalid HTTP method! (Only GET is allowed)"];
-//     sendJSON($error, 405);
-// }
-
-// $users = [];
-
-// if (file_exists($filename)) {
-//     $json = file_get_contents($filename);
-//     $users = json_decode($json, true);
-// }
 
 ?>
 
