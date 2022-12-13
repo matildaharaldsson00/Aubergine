@@ -26,9 +26,13 @@ function login (event) {
     fetch(rqst)
         .then(r => r.json())
         .then((resource) => {
-            //TO_DO: 
-            //ska hämta användarens id, inte klart!
-            resource.id;
+            resource.forEach((user) => {
+                let div = document.createElement("div");
+                div.classList.add("welocomeUser");
+                div.innerHTML = `
+                <p>${user.username} är inloggad!</p>
+                `;
+            })
         })
 }
 
