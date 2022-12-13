@@ -1,18 +1,56 @@
 body{
+    margin: 0;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+#titleh1{
+    display: flex;
+    justify-content: center;
+
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+}
+
 #movieGrid{
     display: grid;
     grid-gap: 20px;
-    grid-template-columns: 150px 150px 150px;
-
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 img{
-    height: 200px;
-    width: 150px;
+    height: 250px;
+    width: 200px;
 }
+
+header{
+    margin: 0;
+    display: flex;
+    justify-content: end;
+    width: 100vw;
+    background-color: aqua;
+}
+
+header div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#user{
+    padding-right: 10px;
+    padding-top: 150px;
+    height: 50px;
+    width: 50px;
+}
+
+#newUser{
+    padding-top: 150px;  
+}
+

@@ -48,10 +48,13 @@ function CreateNewUser (event) {
             } 
             document.querySelector("#name").innerHTML = `Välkomen ${username} till Disney Mystery Club`;
             console.log(username)
+
+            document.querySelector("#newUser").innerHTML = `${username}`;
+            
     }
 }
 
-
+/*
 
 function showMovies (event) {
     event.preventDefault()
@@ -67,4 +70,4 @@ function showMovies (event) {
     } 
 }
 
-
+*/
