@@ -32,4 +32,10 @@ h3 {
     border: none;
 }
 
+#WelcomeBack{
+    background-color: rgb(158, 158, 201);
+    color:white;
+    display: none;
+}
+
 

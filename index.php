@@ -7,10 +7,9 @@
     <link rel="stylesheet" href="CSS/home.css">
     <link rel="stylesheet" href="CSS/register.css">
     <link rel="stylesheet" href="CSS/profile.css">
-    <link rel="stylesheet" href="CSS/movie.css">
+    <link rel="stylesheet" href="CSS/movies.css">
     <link rel="stylesheet" href="CSS/login.css">
     <link rel="stylesheet" href="CSS/welcome.css">
-    <link rel="stylesheet" href="CSS/movies.css">
     <link rel="stylesheet" href="CSS/index.css">
     <title>Disney Mystery Club</title>
   </head>
@@ -25,7 +24,7 @@
     </wrapper>
 
     <wrapper id="allMovies" class="hideMovies">
-      <?php require_once "PHP/readMovies.php";?>
+      <?php //require_once "PHP/readMovies.php";?>
     </wrapper>
 
     <wrapper id="currentMoviePage">
