@@ -6,8 +6,21 @@ document.querySelector("#submit").addEventListener("click", CreateNewUser);
 document.getElementById("conspiracyTheoriesButton").addEventListener("click", showMovies);
 
 
+/*
+function logIn (event) {
+    
+}
+
+*/
+
+//skapar en låda men lägger inget i lådan
+// deklarera en tom variabel
+let userGlobal 
+
+
 function CreateNewUser (event) {
     //Inbyggd funktion som ser till att sidan inte laddar om  
+    //event innehåller information om vad som nyss har hänt MÅSTE vara event
     event.preventDefault();
     
     let username = document.querySelector("#createUsername").value;
@@ -21,7 +34,7 @@ function CreateNewUser (event) {
         //username töms
         document.querySelector("#createUsername").value = "";
         
-        const request = new Request("PHP/createUser.php"); 
+        const request = new Request("PHP/createUsers.php"); 
         fetch(request, {
             body: JSON.stringify({username: username, password: password}),
             header: {"Content-Type": "application/json"},
@@ -29,6 +42,8 @@ function CreateNewUser (event) {
         })
             .then(r => r.json())
             .then(resultat => {
+                userGlobal = resultat
+                console.log(resultat)
                 document.querySelector("#createUsername").value = "";
                 document.querySelector("#createPassword").value = "";
             })
@@ -50,20 +65,7 @@ function CreateNewUser (event) {
     }
 }
 
-/*
+document.querySelector("#logOut").addEventListener("click", logOut)
 
-function showMovies (event) {
-    event.preventDefault()
-   
-    var x = document.querySelector("#movies");
-    if (x.style.display !== "block") {
-        x.style.display = "block";
-    } 
 
-    var y = document.querySelector("#Welcome");
-    if (y.style.display !== "none") {
-        y.style.display = "none";
-    } 
-}
 
-*/

@@ -1,6 +1,6 @@
-<?php
+<?php 
 ini_set("display_errors", 1);
-$filename = "comments.json";
+$filename = "../comments.json";
 
 if (!file_exists($filename)) {
     $requestMethod = $_SERVER["REQUEST_METHOD"];
@@ -20,31 +20,31 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
     // If one of the parameters is missing 
    //$requestData[$name], $requestData[$breed], $requestData[$age]
     
-    if (!isset($requestData["movieId"], $requestData["commentId"],$requestData["userId"],$requestData["date"],$requestData["comment"])){
-        http_response_code(400);
-    }
-    else { 
+
+    
         $highestId = 0;
         foreach ($currentCommentData as $comment){
-            if($comment["commentId"] > $highestId){
-                $highestId = $comment["commentId"];
+            if($comment["commentid"] > $highestId){
+                $highestId = $comment["commentid"];
             }
         }
         $id = $highestId + 1;
-        //the other parameters...
-        $comment = $requestData["commentId"];
-        $userId = $requestData["userId"];
-        $date = $requestData["date"];
-        $movie = $requestData["movieId"];
-
-        $newComment = ["movieId" => $id, "userId" => $username, "date" => $date];
+        $comment = $requestData["comment"];
+        $movieid = $requestData["movieid"];
+        $userid = $requestData["userid"];
+        $date = date("m.d.y");
+       
+        $newComment = ["commentid" => $id, "movieid" => $movieid, "comment" => $comment, "date" => $date, "userid" => $userid, "likes" => 0];
         $currentCommentData[] = $newComment;
         $json = json_encode($currentCommentData, JSON_PRETTY_PRINT);
+        header("Content-Type: application/json");
         file_put_contents($filename, $json);
         echo json_encode($newComment);
     
-    } 
+    
 
 } 
 
 ?>
+
+

@@ -11,17 +11,17 @@ if (!file_exists($filename)) {
 } 
 
 
-$currentDogJSON = file_get_contents($filename);
-$currentDogData = json_decode($currentDogJSON, true);
+$currentMovieJSON = file_get_contents($filename);
+$currentMovieData = json_decode($currentMovieJSON, true);
 
 //04
 if ($_SERVER["REQUEST_METHOD"] == "GET"){
 
-    if ($currentDogData == []) {
-        $dogs = [];
-        echo json_encode($dogs);
+    if ($currentMovieData == []) {
+        $movies = [];
+        echo json_encode($movies);
     } else {
-        echo json_encode($currentDogData);
+        echo json_encode($currentMovieData);
     }
 
 } 
