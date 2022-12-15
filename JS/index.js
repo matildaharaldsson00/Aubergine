@@ -1,4 +1,5 @@
 "use strict";
+var userGlobal 
 //When the user clicks submit the function CreateNewUser 
 //is called which adds the new user to the "user.json" database
 document.querySelector("#submit").addEventListener("click", CreateNewUser);
@@ -6,16 +7,8 @@ document.querySelector("#submit").addEventListener("click", CreateNewUser);
 document.getElementById("conspiracyTheoriesButton").addEventListener("click", showMovies);
 
 
-/*
-function logIn (event) {
-    
-}
-
-*/
-
 //skapar en låda men lägger inget i lådan
 // deklarera en tom variabel
-let userGlobal 
 
 
 function CreateNewUser (event) {
@@ -65,7 +58,7 @@ function CreateNewUser (event) {
     }
 }
 
-document.querySelector("#logOut").addEventListener("click", logOut)
+//document.querySelector("#logOut").addEventListener("click", logOut)
 
 
 
