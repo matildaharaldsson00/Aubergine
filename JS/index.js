@@ -9,15 +9,18 @@ document.getElementById("conspiracyTheoriesButton").addEventListener("click", sh
 function CreateNewUser (event) {
     //Inbyggd funktion som ser till att sidan inte laddar om  
     event.preventDefault();
-    //
+    
     let username = document.querySelector("#createUsername").value;
-    let password = document.querySelector("#CreatePassword").value;
+    let password = document.querySelector("#createPassword").value;
 
     if (username === "" || password === "") {
         document.querySelector("#message").innerHTML = "Du måste fylla i användarnamn och lösenord!";
         document.querySelector("#message").style.color = "red";
         //window.alert("Du måste fylla i användarnamn och lösenord!");
     } else {
+        //username töms
+        document.querySelector("#createUsername").value = "";
+        
         const request = new Request("PHP/createUser.php"); 
         fetch(request, {
             body: JSON.stringify({username: username, password: password}),
@@ -27,7 +30,7 @@ function CreateNewUser (event) {
             .then(r => r.json())
             .then(resultat => {
                 document.querySelector("#createUsername").value = "";
-                document.querySelector("#CreatePassword").value = "";
+                document.querySelector("#createPassword").value = "";
             })
 
             var x = document.querySelector("#Welcome");

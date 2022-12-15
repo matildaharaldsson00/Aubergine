@@ -23,23 +23,27 @@
       <?php require_once "PHP/createUser.php";?>
     </wrapper>
 
-    <wrapper id="allMovies" class="hideMovies">
-      <header>
+    <wrapper class="allMovies" class="hideMovies">
+      <div class="navbar">
         <div>
           <p id="newUser"></p>
-          <img src="Bilder/user.png" alt="user" id="user">
+          <img src="Bilder/user.png" id="userIcon">
         </div>
-      </header>
+      </div>
 
-      <h1 id="titleh1">Utfroska Konspirationsteorier om Disney</h1>
+    
       <div class="center">
+        <h1 id="titleh1">Utfroska Konspirationsteorier om Disney</h1>
         <div id="movieGrid"></div>
-      <div>
+      </div>
+
+      <div id="currentMoviePage" class="hideMovie">
+        <div id="currentMovie"></div>
+      </div>
+
     </wrapper>
    
-    <wrapper id="currentMoviePage" class="hideMovie">
-      <p>en film</p>
-    </wrapper>
+    
 
     <wrapper id="profilePage">
     </wrapper>
