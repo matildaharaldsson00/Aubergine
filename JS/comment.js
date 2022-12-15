@@ -24,11 +24,6 @@ function CreateNewComment (event) {
         })
 }
 
-/*
-if (userGlobal !== "") {
-    showComment ();
-}
-*/
 
 function showComment (movie) {
     document.querySelector("#hereComesTheComments").innerHTML = "";
