@@ -21,6 +21,7 @@ body{
 #container{
     padding-top: 150px;
     width: 800px;
+    height: 100vh;
 }
 
 #container div{
@@ -101,6 +102,9 @@ h1{
     text-decoration: none;
 }
     
+#newUser{
+    padding: 14px 16px;
+}
 
 #userIcon{
     display: block;
