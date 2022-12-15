@@ -20,11 +20,34 @@
     </wrapper>
 
     <wrapper id="registerPage" class="hideregisterPage">
-      <?php require_once "PHP/createUser.php";?>
+      <main>
+          <div>
+              <form id="create" class="hidden" method="POST">
+                  <label"><h3>Registrera ny användare</h3></label>
+                  <label>Användarnamn</label>
+                  <input type="text" placeholder="Skriv ett användarnamn" id="createUsername">
+                  <label>Lösenord</label>
+                  <input type="password" placeholder="Skriv ett lösenord" id="createPassword">
+                  <input type="submit" value="Send" id="submit">
+                  <p id="message"></p>
+              </form>
+          </div>
+      </main>
+
+      <div id="Welcome">
+        <div>
+            <h2 id="name"></h2>
+            <button id="conspiracyTheoriesButton">Utforska konsperationsteorier här!</button>
+        </div>
+      </div>
     </wrapper>
 
     <wrapper class="allMovies" class="hideMovies">
       <div class="navbar">
+        <div>
+        <p id="logOut">Logga ut</p>
+        <p id="goBack">Tillbaka</p>
+        </div>
         <div>
           <p id="newUser"></p>
           <img src="Bilder/user.png" id="userIcon">
@@ -33,7 +56,7 @@
 
     
       <div class="center">
-        <h1 id="titleh1">Utfroska Konspirationsteorier om Disney</h1>
+        <h1 id="titleh1">Utforska Konspirationsteorier om Disney</h1>
         <div id="movieGrid"></div>
       </div>
 
@@ -48,8 +71,10 @@
     <wrapper id="profilePage">
     </wrapper>
 
+    <script src="JS/index.js"></script>
     <script src="JS/login.js"></script>
     <script src="JS/movies.js"></script>
+    <script src="JS/comment.js"></script>
     
   </body>
 </html>

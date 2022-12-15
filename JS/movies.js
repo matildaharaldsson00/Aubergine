@@ -2,8 +2,6 @@
 
 showDiv();
 
-
-
 function showDiv() {
     const request = new Request("PHP/readMovies.php"); 
     fetch(request)
@@ -28,6 +26,8 @@ function showDiv() {
         })
 }
 
+let movieGlobal
+
 function showMovie (event) {
     event.preventDefault()
     let button_id = event.target.id;
@@ -38,6 +38,7 @@ function showMovie (event) {
         fetch(request)
             .then(r => r.json())
             .then( movie => {
+                movieGlobal = movie[id-1]
                 console.log(id)
                 
                 document.getElementById("currentMovie").innerHTML = "";
@@ -68,20 +69,27 @@ function showMovie (event) {
 
                         <form id="formComment" action="" method="post">
                             <div>
-                                <textarea name="comments" id="comments" >Skriv en kommentar!
-                                </textarea>
+                                <textarea name="comments" id="comments" >Skriv en kommentar!</textarea>
                             </div>
                             <input type="submit" value="Submit" id="submitComment">
                         </form>
 
-                        
-                        <h4>Här kommer kommentarer!</h4>
+                        <div id="hereComesTheComments">
+                        </div>
+                    
                       
                     </div>
                     `;
                     document.getElementById("currentMovie").appendChild(div);
                     console.log(title)  
+
+                    document.querySelector("#submitComment").addEventListener("click", CreateNewComment);
+                    //visa kommentarerna
+                    showComment (movieGlobal);
+                    
             })
+
+
     //visa endast en film
     var b = document.querySelector(".hideMovie");
     if (b.style.display !== "block") {
@@ -96,17 +104,19 @@ function showMovie (event) {
     
 }
 
-/*
-function onClickMovie (event) {
-    event.preventDefault()
-    let picture = event.target.id;
-    let id = picture.slice(5);
+document.querySelector("#goBack").addEventListener("click", goBack)
+function goBack () {
+    var b = document.querySelector(".center");
+    if (b.style.display !== "flex") {
+        b.style.display = "flex";
+    } 
 
-    const requestReadOne = new Request(`PHP/readOneMovie.php/?id=${id}`);
-        fetch(requestReadOne)
-            .then(r => r.json())
-            .then(movie => {
-                
-            })
+    var t = document.querySelector("#container");
+    if (t.style.display !== "none") {
+        t.style.display = "none";
+    } 
 }
-*/
+
+
+
+

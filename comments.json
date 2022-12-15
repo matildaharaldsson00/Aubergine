@@ -1,10 +1,88 @@
 [
-	{
-		"movieId": "siffra",		
-		"commentId": "siffra",	
-		"userId": "siffra",		
-		"date": "string",		
-		"comment": "string"
-}
-
+    {
+        "commentid": 1,
+        "movieid": null,
+        "comment": "Skriv hej\n                                ",
+        "date": "12.15.22",
+        "userid": 6
+    },
+    {
+        "commentid": 2,
+        "movieid": 2,
+        "comment": "love\n                                ",
+        "date": "12.15.22",
+        "userid": 8
+    },
+    {
+        "commentid": 3,
+        "movieid": 3,
+        "comment": "test test          ",
+        "date": "12.15.22",
+        "userid": 9,
+        "likes": null
+    },
+    {
+        "commentid": 4,
+        "movieid": 2,
+        "comment": "Skriv en komhfredf\n                                ",
+        "date": "12.15.22",
+        "userid": 3,
+        "likes": 0
+    },
+    {
+        "commentid": 5,
+        "movieid": 2,
+        "comment": "hejsan test\n                                ",
+        "date": "12.15.22",
+        "userid": 4,
+        "likes": 0
+    },
+    {
+        "commentid": 6,
+        "movieid": 9,
+        "comment": "test igen\n                                ",
+        "date": "12.15.22",
+        "userid": 5,
+        "likes": 0
+    },
+    {
+        "commentid": 7,
+        "movieid": 2,
+        "comment": "tjena\n                                ",
+        "date": "12.15.22",
+        "userid": 5,
+        "likes": 0
+    },
+    {
+        "commentid": 8,
+        "movieid": 4,
+        "comment": "test igen lol\n                                ",
+        "date": "12.15.22",
+        "userid": 6,
+        "likes": 0
+    },
+    {
+        "commentid": 9,
+        "movieid": 2,
+        "comment": "test lol",
+        "date": "12.15.22",
+        "userid": 9,
+        "likes": 0
+    },
+    {
+        "commentid": 10,
+        "movieid": 2,
+        "comment": "test hehehe",
+        "date": "12.15.22",
+        "userid": 13,
+        "likes": 0
+    },
+    {
+        "commentid": 11,
+        "movieid": 2,
+        "comment": "god jul trassel",
+        "date": "12.15.22",
+        "userid": 14,
+        "likes": 0
+    }
 ]

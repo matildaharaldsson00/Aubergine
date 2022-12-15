@@ -78,12 +78,20 @@ h1{
 }
 
 .navbar {
+    display: flex;
     position: fixed; 
     background-color: rgb(200, 229, 246);
     top: 0; /* Position the navbar at the top of the page */
     width: 100%; /* Full width */
 }
     
+#goBack{
+    padding: 14px 16px;
+}
+
+#hereComesTheComments{
+    height: 400px;
+}
 
 .navbar p {
     float: left;
