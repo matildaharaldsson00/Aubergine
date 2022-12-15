@@ -5,6 +5,7 @@ document.querySelector("#submit").addEventListener("click", CreateNewUser);
 //document.querySelector("#submitUser").addEventListener("click", logIn);
 document.getElementById("conspiracyTheoriesButton").addEventListener("click", showMovies);
 
+
 /*
 function logIn (event) {
     
@@ -15,6 +16,7 @@ function logIn (event) {
 //skapar en låda men lägger inget i lådan
 // deklarera en tom variabel
 let userGlobal 
+
 
 function CreateNewUser (event) {
     //Inbyggd funktion som ser till att sidan inte laddar om  

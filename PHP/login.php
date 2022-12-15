@@ -1,23 +1,5 @@
 <?php
 
-require_once "functions.php";
-
-$method = $_SERVER["REQUEST_METHOD"];
-
-$json = file_get_contents("user.json");
-$users = json_decode($json, true);
-
-if(isset($_GET["username"]) && ($_GET["password"])) {
-    foreach ($users as $user) {
-        if ($user["username"] == $_GET["username"] && $user["password"] == $_GET["password"]) {
-            $logedinUser[] = $user;
-        }
-    }
-    header("Content-Type: application/json");
-    echo json_encode($logedinUser);
-    exit();
-}
-
 ?>
 
 <!DOCTYPE html>
@@ -31,13 +13,13 @@ if(isset($_GET["username"]) && ($_GET["password"])) {
     
 </head>
 <body>
-    <form id="loginForm" >
+    <form action="PHP/login.php" id="loginForm" method="POST">
         <h3>Logga in</h3>
         <label>Användarnamn</label>
         <input type="text" name="username" id="username" placeholder="Användarnamn">
         <label>Lösenord</label>
         <input type="password" name="password" id="password" placeholder="Lösenord">
-        <input type="submit" value="Send" id="submitUser">
+        <input type="submit" value="Send" id="submitUser" name="loginSubmit">
         <input type="submit" value="Skapa konto" id="registerNewUser">
     </form>
 
@@ -45,6 +27,7 @@ if(isset($_GET["username"]) && ($_GET["password"])) {
         <h2>Välkommen tillbaka <?php //echo  $username ?></h2>
     </div>
 
+    <script src="JS/index.js"></script>
     <script src="JS/login.js"></script>
 </body>
 </html>
