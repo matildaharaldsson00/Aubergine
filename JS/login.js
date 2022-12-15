@@ -33,24 +33,23 @@ function onClick(event) {
     } 
 }
 
+//when user clicks sumbit the function logIn is called to check if the user exists in the database
+document.querySelector("#submitUser").addEventListener("click", logIn);
 
-document.querySelector("#submitUser").addEventListener("click", login);
-
-function login (event) {
+function logIn (event) {
     event.preventDefault();
 
-    const rqst = new Request("PHP/login.php");
-    fetch(rqst)
+    let username = document.querySelector("#username").value;
+    let password = document.querySelector("#password").value;
+    let logedInUser = [];
+
+    fetch("PHP/login.php")
         .then(r => r.json())
-        .then((resource) => {
-            resource.forEach((user) => {
-                let div = document.createElement("div");
-                div.classList.add("welocomeUser");
-                div.innerHTML = `
-                <p>${user.username} är inloggad!</p>
-                `;
+        .then(resource => {
+            resource.forEach(user => {
+                if(username == user.username && password == user.password) {
+                    // spara infomationen om den inloggade användaren i logedInUser
+                }
             })
         })
 }
-
-
