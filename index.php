@@ -57,9 +57,15 @@
         </div>
       </div>
     </wrapper>
-
+    
     <wrapper class="allMovies" class="hideMovies">
       <div class="navbar">
+        <div class="profileOverlay" onclick="showPopup()">Click me!
+        <span class ="popupContent" id = "popupItem">Hello, change password</span>  
+      </div>
+      
+
+
           <p id="newUser"></p>
           <img src="Bilder/user.png" id="userIcon">
         </div>
@@ -84,8 +90,8 @@
 
     <script src="JS/index.js"></script>
     <script src="JS/login.js"></script>
+    <script src="JS/profile.js"></script>
     <script src="JS/movies.js"></script>
     <script src="JS/comment.js"></script>
-    
   </body>
 </html>
