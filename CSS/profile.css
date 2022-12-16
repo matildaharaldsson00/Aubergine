@@ -1,0 +1,35 @@
+
+.profileOverlay {
+  position: relative;
+  display: inline-block;
+  cursor: context-menu;
+}
+
+.profileOverlay .popupContent {
+
+  visibility: hidden;
+  
+  background-color: black;
+  
+  color: red;
+  
+  width: 200px;
+  
+  text-align: center;
+  
+  position: absolute;
+  
+  z-index: 1;
+  
+  border-radius: 10px;
+  
+  padding: 10px 0;
+  
+  bottom: 100%;
+  
+  left: 30%;
+  
+  margin-left: -100px;
+  
+  }
+  
