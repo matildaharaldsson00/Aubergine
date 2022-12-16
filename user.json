@@ -13,5 +13,10 @@
         "id": 3,
         "username": "test",
         "password": "test"
+    },
+    {
+        "id": 4,
+        "username": "olivi",
+        "password": "tesf"
     }
 ]
