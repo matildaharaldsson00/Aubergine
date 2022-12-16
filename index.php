@@ -60,6 +60,7 @@
     
     <wrapper class="allMovies" class="hideMovies">
       <div class="navbar">
+      <input id = "logOut" type="button" value="Logga ut" onClick="window.location.reload(true)">
         <div class="profileOverlay" onclick="showPopup()">Click me!
         <span class ="popupContent" id = "popupItem">Hello, change password</span>  
       </div>
