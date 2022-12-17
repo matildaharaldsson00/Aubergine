@@ -62,7 +62,6 @@ function logIn (event) {
                     document.querySelector("#newUser").innerHTML = `${username}`;
                     // spara infomationen om den inloggade användaren i logedInUser
                 } else {
-                    console.log("wrong username or password")
                     document.querySelector("#message2").innerHTML = "Fel användarnamn eller lösenord";
                     document.querySelector("#message2").style.color = "red";
                 }
