@@ -75,7 +75,7 @@ h1{
 }
 
 .picture:hover {
-    box-shadow: 10px 10px 2px 1px rgba(0, 0, 0, 0.436);
+    box-shadow: 5px 6px 2px 1px rgba(0, 0, 0, 0.436);
     transition: 0.4s;
     transform: scale(1.1);
 }
