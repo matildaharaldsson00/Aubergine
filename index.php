@@ -66,20 +66,17 @@
           <img src="Bilder/user.png" id="myBtn" class="userIcon">
 
          
+
           <div id="myModal" class="modal">
     <!-- Modal content -->
             <div class="modal-content">
                 <span class="close">&times;</span>
-                <label>Användarnamn</label>
-                  <input type="text" placeholder="Skriv ett nytt användarnamn" id="updateUsername">
-                  <label>Lösenord</label>
-                  <input type="password" placeholder="Skriv ett nytt lösenord" id="updatePassword">
+                <div id="popUpUser"></div>
+                  <div class ="deleteButton"></div>
                   <input id = "logOut" type="button" value="Logga ut" onClick="window.location.reload(true)">
                   
             </div>
-          </div>
-        </div>
-
+    </div>
 
     <!-- /////// 
     <div class="navbar">

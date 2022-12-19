@@ -60,6 +60,8 @@ function logIn (event) {
                     console.log(username)
 
                     document.querySelector("#newUser").innerHTML = `${username}`;
+
+                    popUp();
                     // spara infomationen om den inloggade användaren i logedInUser
                 } else {
                     document.querySelector("#message2").innerHTML = "Fel användarnamn eller lösenord";

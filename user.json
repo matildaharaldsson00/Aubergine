@@ -10,18 +10,13 @@
         "password": "LoveOlivia123"
     },
     {
-        "id": 3,
-        "username": "test",
-        "password": "test"
-    },
-    {
         "id": 4,
         "username": "olivi",
         "password": "tesf"
     },
     {
         "id": 5,
-        "username": "hej",
-        "password": "hej"
+        "username": "test",
+        "password": "test"
     }
 ]

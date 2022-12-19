@@ -26,3 +26,52 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
+
+function popUp (){
+  document.getElementById("popUpUser").innerHTML = `<h4>${userGlobal["username"]}</4>`;
+  document.querySelector(".deleteButton").innerHTML = `
+  <label>Användarnamn</label>
+  <input type="text" placeholder="${userGlobal["username"]}" id="updateUsername">
+  <label>Lösenord</label>
+  <input type="password" placeholder="${userGlobal["password"]}" id="updatePassword">
+  <input id = "submitChange" type="button" value="Skicka">
+  <input id= "-${userGlobal["id"]}" type="button" value="Radera">
+  `;
+
+  //delete button
+  document.getElementById(`-${userGlobal["id"]}`).addEventListener("click", deleteUser)
+}
+
+
+function deleteUser(event) {
+  event.preventDefault()
+  const request = new Request("PHP/login.php");
+  fetch(request)
+      .then(r => r.json())
+      .then(user => {
+        console.log(user)
+        
+        let button_id = event.target.id;
+        //med slice(1) tar vi bort knabbetns "-" så idet endast blir siffran
+        //alltså användarens id
+        let buttonId = button_id.slice(1);
+
+        for (let i = 0; i < user.length; i++) {
+          if (user[i].id == buttonId) {
+    
+              fetch("PHP/deleteUser.php", {
+                  method: "DELETE",
+                  headers: {'Content-Type': 'application/json'},
+                  body: JSON.stringify({id: buttonId})
+              })
+                  .then(r => r.json())
+                  .then(user => {
+                    user = userGlobal["username"]
+                    alert(`${user} ditt konto raderades nyss`); 
+                    window.location.reload(true);
+                  })  
+          }
+      }
+
+  })
+}

@@ -80,6 +80,8 @@ function CreateNewUser (event) {
                     console.log(resultat)
                     document.querySelector("#createUsername").value = "";
                     document.querySelector("#createPassword").value = "";
+
+                    popUp();
                 })
         
             var x = document.querySelector("#Welcome");
