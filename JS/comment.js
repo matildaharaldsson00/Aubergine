@@ -45,7 +45,7 @@ function showComment (movie) {
                         div.innerHTML = `
                         <p>${comment}</p>
                         <p>${date}</p>
-                        <p>${likes}</p>                    
+                        <button id="likeButton_${id}" name="like" data="${id}">${likes}</button>
                         `;
                         document.querySelector("#hereComesTheComments").appendChild(div);
     
