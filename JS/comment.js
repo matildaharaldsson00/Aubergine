@@ -39,8 +39,17 @@ function showComment (movie) {
                         let comment = comments[i].comment;
                         let date = comments[i].date;
                         let likes = comments[i].likes;
+                        let id = comments[i].commentid;
                        // let name = 
-                        
+                        /*
+                        let div = document.createElement("div")
+                        div.innerHTML = `
+                        <p>${comment}</p>
+                        <p>${date}</p>
+                        <p>${likes}</p>                    
+                        `;
+                        document.querySelector("#hereComesTheComments").appendChild(div);
+    */
                         let div = document.createElement("div")
                         div.innerHTML = `
                         <p>${comment}</p>
@@ -56,6 +65,7 @@ function showComment (movie) {
                 }
             })
 }
+
 
 function createNewLike (event) {
     event.preventDefault();

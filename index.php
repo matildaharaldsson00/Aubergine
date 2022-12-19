@@ -66,7 +66,6 @@
           <img src="Bilder/user.png" id="myBtn" class="userIcon">
 
          
-
           <div id="myModal" class="modal">
     <!-- Modal content -->
             <div class="modal-content">
@@ -76,7 +75,9 @@
                   <input id = "logOut" type="button" value="Logga ut" onClick="window.location.reload(true)">
                   
             </div>
-    </div>
+          </div>
+        </div>
+
 
     <!-- /////// 
     <div class="navbar">
@@ -116,5 +117,6 @@
     <script src="JS/movies.js"></script>
     <script src="JS/comment.js"></script>
     <script src="JS/popUp.js"></script>
+ 
   </body>
 </html>
