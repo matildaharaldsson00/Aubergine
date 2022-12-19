@@ -28,18 +28,21 @@ window.onclick = function(event) {
 }
 
 function popUp (){
+  
   document.getElementById("popUpUser").innerHTML = `<h4>${userGlobal["username"]}</4>`;
   document.querySelector(".deleteButton").innerHTML = `
-  <label>Användarnamn</label>
-  <input type="text" placeholder="${userGlobal["username"]}" id="updateUsername">
-  <label>Lösenord</label>
-  <input type="password" placeholder="${userGlobal["password"]}" id="updatePassword">
-  <input id = "submitChange" type="button" value="Skicka">
-  <input id= "-${userGlobal["id"]}" type="button" value="Radera">
+  
+
+  <label>Ändra Lösenord</label>
+  <input type="password" value="${userGlobal["password"]}" id="updatePassword">
+  <input id ="newsubmit" type="button" value="Skicka">
+  <input id ="_${userGlobal["id"]}" type="button" value="Radera">
   `;
 
+  //edit button
+  document.getElementById("newsubmit").addEventListener("click", editUser)
   //delete button
-  document.getElementById(`-${userGlobal["id"]}`).addEventListener("click", deleteUser)
+  document.getElementById(`_${userGlobal["id"]}`).addEventListener("click", deleteUser)
 }
 
 
@@ -74,4 +77,31 @@ function deleteUser(event) {
       }
 
   })
+}
+
+function editUser(event) {
+  event.preventDefault()
+ 
+  let id = userGlobal["id"]
+  let name = userGlobal["username"]
+  const request = new Request("PHP/login.php");
+      fetch(request)
+          .then(r => r.json())
+          .then(user => {
+                user = userGlobal
+                let newPassword = document.getElementById("updatePassword").value;
+                console.log(newPassword)
+                  fetch("PHP/updateUser.php", {
+                      method: "PUT",
+                      headers: { 'Content-Type': 'application/json' },
+                      body: JSON.stringify({id: id, username: name, password: newPassword})
+                  })
+                    .then(r => r.json())
+                    .then(user => {
+                      alert("Du ändrade nyss ditt lösenord")
+                      modal.style.display = "none";
+                    })     
+              
+          })
+
 }
