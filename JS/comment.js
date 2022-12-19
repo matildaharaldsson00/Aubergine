@@ -49,9 +49,31 @@ function showComment (movie) {
                         `;
                         document.querySelector("#hereComesTheComments").appendChild(div);
     
+                        document.querySelector("#likeButton_" + id + "").addEventListener("click", createNewLike);
                     }
                     
                     
                 }
             })
+}
+
+function createNewLike (event) {
+    event.preventDefault();
+
+    var commentid = event.target.getAttribute("data");
+
+    console.log(commentid);
+
+    const request = new Request("PHP/likes.php"); 
+    fetch(request, {
+        body: JSON.stringify({commentid: commentid}),
+        header: {"Content-Type": "application/json"},
+        method: "POST"
+        })
+        .then(r => r.json())
+        .then( likes => {
+            console.log(likes);
+            event.target.innerHTML = likes;
+
+        })
 }
