@@ -38,7 +38,7 @@ h3 {
     align-items: center;
 }
 
-#conspiracyTheoriesButton{
+#conspiracyTheoriesButton, #conspiracyTheoriesButton2{
 height: 150px;
 width: 300px;
 }

@@ -55,7 +55,9 @@ function showMovie (event) {
                     let div = document.createElement("div")
                     div.innerHTML = `
                     <div id="container">
+                    <p id="goBack">Tillbaka</p>
                         <h1>${title}</h1>
+            
                         <div>
                             <img class="pictureMovie" src="${img}" alt="picture of movie"">
                             <div>
@@ -84,6 +86,7 @@ function showMovie (event) {
                     console.log(title)  
 
                     document.querySelector("#submitComment").addEventListener("click", CreateNewComment);
+                    document.querySelector("#goBack").addEventListener("click", goBack);
                     //visa kommentarerna
                     showComment (movieGlobal);
                     
@@ -104,7 +107,7 @@ function showMovie (event) {
     
 }
 
-document.querySelector("#goBack").addEventListener("click", goBack)
+
 function goBack () {
     var b = document.querySelector(".center");
     if (b.style.display !== "flex") {

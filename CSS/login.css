@@ -5,6 +5,8 @@ body {
     height: 100vh;
 
 }
+
+
 form {
     max-width: 400px;
     padding: 20px;
@@ -33,9 +35,14 @@ h3 {
 }
 
 #WelcomeBack{
-    background-color: rgb(158, 158, 201);
-    color:white;
     display: none;
+}
+
+#WelcomeBack > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 

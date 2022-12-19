@@ -1,47 +1,27 @@
-<?php 
+<?php
+ini_set("display_errors", 1);
+$filename = "user.json";
 
-require_once "functions.php"; 
+if ($_SERVER['REQUEST_METHOD'] == 'DELETE') {
+  // Hämtar användarens id från user databasen
+  $username, $password = $_POST['id'];
 
-$requestMethod = $_SERVER["REQUEST_METHOD"];
-$onlyMethod = "DELETE";
+  // Skickar en delete request to apin för att ta bort 
+  $curl = curl_init();
+  curl_setopt_array($curl, array(
+    CURLOPT_URL => "user.json",
+    CURLOPT_RETURNTRANSFER => true,
+    CURLOPT_CUSTOMREQUEST => "DELETE",
+  ));
+  $response = curl_exec($curl);
+  $err = curl_error($curl);
+  curl_close($curl);
 
-$user = [];
-$fileName = "user.json";
-
-if ($requestMethod != $onlyMethod) {
-    header("Content-Type: application/json");
-    http_response_code(405);
-    echo json_encode(["error" => "wrong method used"]);
-    exit();
+  if ($err) {
+    // Om det blir ett fel att radera användaren 
+    echo "Error deleting user: $err";
+  } else {
+    // ladda om sidan när kontot är raderat
+    location.reload(true);
+  }
 }
-
-if (file_exists("$fileName")) {
-    $json = file_get_contents("$fileName");
-    $user = json_decode($json, true);
-}
-
-$requestJson = file_get_contents("php://input");
-$requestData = json_decode($requestJson, true);
-
-if($requestMethod == "DELETE") {
-    if(!isset($requestData["id"])) { 
-    $error = ["error" => "bad request"];
-    sendJSON($error, 400);
-    }
-
-    $id = $requestData["id"];
-
-    foreach($user as $users => $user) {
-        if($user["id"] == $id) {
-            array_splice($user, $users, 1);
-            $json = json_encode($user, JSON_PRETTY_PRINT);
-            file_put_contents("$fileName", $json);
-            sendJSON($id);
-        }
-    }
-
-    $error = ["$error" => "not found"];
-    sendJSON($error, 404);    
-}
-
-?>

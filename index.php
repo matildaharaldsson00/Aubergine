@@ -11,12 +11,29 @@
     <link rel="stylesheet" href="CSS/login.css">
     <link rel="stylesheet" href="CSS/welcome.css">
     <link rel="stylesheet" href="CSS/index.css">
+    <link rel="stylesheet" href="CSS/popUp.css">
     <title>Disney Mystery Club</title>
   </head>
   <body>
 
     <wrapper id="loginPage"  class="hideloginPage">
-      <?php require_once "PHP/login.php";?>
+      <form action="PHP/login.php" id="loginForm" method="GET">
+          <h3>Logga in</h3>
+          <label>Användarnamn</label>
+          <input type="text" name="username" id="username" placeholder="Användarnamn">
+          <label>Lösenord</label>
+          <input type="password" name="password" id="password" placeholder="Lösenord">
+          <input type="submit" value="Send" id="submitUser" name="loginSubmit">
+          <input type="submit" value="Skapa konto" id="registerNewUser">
+          <p id="message2"></p>
+      </form>
+
+      <div id="WelcomeBack">
+          <div>
+              <h2 id="name2"></h2>
+              <button id="conspiracyTheoriesButton2">Utforska konsperationsteorier här!</button>
+          </div>
+      </div>
     </wrapper>
 
     <wrapper id="registerPage" class="hideregisterPage">
@@ -41,18 +58,43 @@
         </div>
       </div>
     </wrapper>
-
+    
     <wrapper class="allMovies" class="hideMovies">
-      <div class="navbar">
-        <div>
-        <p id="logOut">Logga ut</p>
-        <p id="goBack">Tillbaka</p>
+
+    <div class="navbar">
+          <p id="newUser"></p>
+          <img src="Bilder/user.png" id="myBtn" class="userIcon">
+
+         
+          <div id="myModal" class="modal">
+    <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <label>Användarnamn</label>
+                  <input type="text" placeholder="Skriv ett nytt användarnamn" id="updateUsername">
+                  <label>Lösenord</label>
+                  <input type="password" placeholder="Skriv ett nytt lösenord" id="updatePassword">
+                  <input id = "logOut" type="button" value="Logga ut" onClick="window.location.reload(true)">
+                  
+            </div>
+          </div>
         </div>
-        <div>
+
+
+    <!-- /////// 
+    <div class="navbar">
+      <input id = "logOut" type="button" value="Logga ut" onClick="window.location.reload(true)">
+        <div class="profileOverlay" onclick="showPopup()">Click me!
+        <span class ="popupContent" id = "popupItem">Hello, change password</span>  
+      </div>
+      
+
+
           <p id="newUser"></p>
           <img src="Bilder/user.png" id="userIcon">
         </div>
-      </div>
+      </div>-->
+      
 
     
       <div class="center">
@@ -73,8 +115,9 @@
 
     <script src="JS/index.js"></script>
     <script src="JS/login.js"></script>
+    <script src="JS/profile.js"></script>
     <script src="JS/movies.js"></script>
     <script src="JS/comment.js"></script>
-    
+    <script src="JS/popUp.js"></script>
   </body>
 </html>

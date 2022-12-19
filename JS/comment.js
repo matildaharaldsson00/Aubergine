@@ -24,11 +24,6 @@ function CreateNewComment (event) {
         })
 }
 
-/*
-if (userGlobal !== "") {
-    showComment ();
-}
-*/
 
 function showComment (movie) {
     document.querySelector("#hereComesTheComments").innerHTML = "";
@@ -44,14 +39,13 @@ function showComment (movie) {
                         let comment = comments[i].comment;
                         let date = comments[i].date;
                         let likes = comments[i].likes;
+                       // let name = 
                         
                         let div = document.createElement("div")
                         div.innerHTML = `
-                        
                         <p>${comment}</p>
                         <p>${date}</p>
                         <button id="likeButton_${id}" name="like" data="${id}">${likes}</button>
-                    
                         `;
                         document.querySelector("#hereComesTheComments").appendChild(div);
     
