@@ -5,7 +5,7 @@
         "comment": "bra film",
         "date": "12.15.22",
         "userid": 3,
-        "likes": 0
+        "likes": 1
     },
     {
         "commentid": 2,
@@ -21,7 +21,7 @@
         "comment": "test",
         "date": "12.15.22",
         "userid": 1,
-        "likes": 0
+        "likes": 1
     },
     {
         "commentid": 4,
