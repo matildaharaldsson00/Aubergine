@@ -55,9 +55,9 @@ function showComment (movie) {
                         <p>${comment}</p>
                         <p>${date}</p>
                         <button id="likeButton_${id}" name="like" data="${id}">${likes}</button>
+                        
                         `;
                         document.querySelector("#hereComesTheComments").appendChild(div);
-    
                         document.querySelector("#likeButton_" + id + "").addEventListener("click", createNewLike);
                     }
                     
@@ -66,7 +66,33 @@ function showComment (movie) {
             })
 }
 
+/*
 
+function changeHear1 () {
+    var x = document.querySelector(".heartOne");
+    if (x.style.display !== "none") {
+        x.style.display = "none";
+    } 
+
+    var y = document.querySelector(".heartTwo");
+    if (y.style.display !== "block") {
+        y.style.display = "block";
+    } 
+}
+
+function changeHear2 () {
+    var x = document.querySelector(".heartTwo");
+    if (x.style.display !== "none") {
+        x.style.display = "none";
+    } 
+
+    var y = document.querySelector(".heartOne");
+    if (y.style.display !== "block") {
+        y.style.display = "block";
+    } 
+}
+
+*/
 function createNewLike (event) {
     event.preventDefault();
 
