@@ -5,7 +5,7 @@
         "comment": "bra film",
         "date": "12.15.22",
         "userid": 3,
-        "likes": 1
+        "likes": 2
     },
     {
         "commentid": 2,
@@ -13,7 +13,7 @@
         "comment": "bra fil lejonkungen",
         "date": "12.15.22",
         "userid": 3,
-        "likes": 0
+        "likes": 1
     },
     {
         "commentid": 3,
@@ -21,7 +21,7 @@
         "comment": "test",
         "date": "12.15.22",
         "userid": 1,
-        "likes": 1
+        "likes": 3
     },
     {
         "commentid": 4,
