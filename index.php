@@ -31,7 +31,7 @@
       <div id="WelcomeBack">
           <div>
               <h2 id="name2"></h2>
-              <button id="conspiracyTheoriesButton2">Utforska konsperationsteorier här!</button>
+              <button id="conspiracyTheoriesButton2">Utforska konspirationsteorier här!</button>
           </div>
       </div>
     </wrapper>
