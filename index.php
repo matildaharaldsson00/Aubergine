@@ -54,7 +54,7 @@
       <div id="Welcome">
         <div>
             <h2 id="name"></h2>
-            <button id="conspiracyTheoriesButton">Utforska konsperationsteorier här!</button>
+            <button id="conspiracyTheoriesButton">Utforska konspirationsteorier här!</button>
         </div>
       </div>
     </wrapper>
