@@ -35,8 +35,8 @@ function popUp (){
 
   <label>Ändra Lösenord</label>
   <input type="password" value="${userGlobal["password"]}" id="updatePassword">
-  <input id ="newsubmit" type="button" value="Skicka">
-  <input id ="_${userGlobal["id"]}" type="button" value="Radera">
+  <input id ="newsubmit" type="button" value="Uppdatera lösenord">
+  <input id ="_${userGlobal["id"]}" type="button" value="Radera konto">
   `;
 
   //edit button
