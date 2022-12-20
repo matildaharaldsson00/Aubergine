@@ -12,7 +12,7 @@
     {
         "id": 4,
         "username": "olivi",
-        "password": "tesf"
+        "password": "ciro1"
     },
     {
         "id": 5,
@@ -23,6 +23,10 @@
         "id": 6,
         "username": "Jocke Bejram",
         "password": "hejhej123"
-
+    },
+    {
+        "id": 7,
+        "username": "oli",
+        "password": "tjo"
     }
 ]
