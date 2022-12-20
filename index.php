@@ -4,14 +4,15 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="CSS/home.css">
-    <link rel="stylesheet" type="text/css" href="CSS/register.css">
-    <link rel="stylesheet" type="text/css" href="CSS/profile.css">
-    <link rel="stylesheet" type="text/css" href="CSS/movies.css">
-    <link rel="stylesheet" type="text/css" href="CSS/login.css">
-    <link rel="stylesheet" type="text/css" href="CSS/welcome.css">
-    <link rel="stylesheet" type="text/css" href="CSS/index.css">
-    <link rel="stylesheet" type="text/css" href="CSS/popUp.css">
+    <link rel="stylesheet" type="text/css" href="CSS\styling.css">
+    <link rel="stylesheet" type="text/css" href="CSS\profile.css">
+    <link rel="stylesheet" type="text/css" href="CSS\home.css">
+    <link rel="stylesheet" type="text/css" href="CSS\register.css">
+    <link rel="stylesheet" type="text/css" href="CSS\movies.css">
+    <link rel="stylesheet" type="text/css" href="CSS\login.css">
+    <link rel="stylesheet" type="text/css" href="CSS\welcome.css">
+    <link rel="stylesheet" type="text/css" href="CSS\index.css">
+    <link rel="stylesheet" type="text/css" href="CSS\popUp.css">
     <title>Disney Mystery Club</title>
   </head>
   <body>

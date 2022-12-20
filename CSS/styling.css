@@ -1,0 +1,13 @@
+body {
+    background-color: #8F96CE;
+}
+
+.paris > img {
+position: absolute;
+width: 784px;
+height: 953px;
+left: 0px;
+top: 71px;
+opacity: 50%;
+z-index: -1;
+}
