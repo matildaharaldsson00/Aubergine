@@ -15,6 +15,11 @@ function showMovies (event) {
         b.style.display = "block";
     } 
 
+    var z = document.querySelector(".hideCastle");
+    if (z.style.display !== "none") {
+        z.style.display = "none";
+    } 
+
     var t = document.querySelector("#Welcome");
     if (t.style.display !== "none") {
         t.style.display = "none";
