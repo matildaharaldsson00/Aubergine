@@ -92,11 +92,11 @@ function showComment (movie) {
                                 }) 
                             })
                         }
+                    }       
                     
-                    
-                }
-            })
+                )
 }
+
 
 /*
 
