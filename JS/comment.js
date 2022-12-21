@@ -40,26 +40,37 @@ function showComment (movie) {
                         let date = comments[i].date;
                         let likes = comments[i].likes;
                         let id = comments[i].commentid;
-                       // let name = 
-                        /*
-                        let div = document.createElement("div")
-                        div.innerHTML = `
-                        <p>${comment}</p>
-                        <p>${date}</p>
-                        <p>${likes}</p>                    
-                        `;
-                        document.querySelector("#hereComesTheComments").appendChild(div);
-    */
-                        let div = document.createElement("div")
-                        div.innerHTML = `
-                        <p>${comment}</p>
-                        <p>${date}</p>
-                        <button id="likeButton_${id}" name="like" data="${id}">Likes: ${likes}</button>
-                        
-                        `;
-                        document.querySelector("#hereComesTheComments").appendChild(div);
-                        document.querySelector("#likeButton_" + id + "").addEventListener("click", createNewLike, {once: true});
-                    }
+                        //idet på personen som har skrivit kommentaren
+                        let userid = comments[i].userid;
+                        //fetcha login.php för att få tillgång till alla users 
+                        fetch("PHP/login.php")
+                            .then(r => r.json())
+                            .then(resource => {
+                                console.log(resource)
+                                //forEach user om useridet ppå den som har skrivit kommentaren är detsamma som 
+                                //idet i users.json console.log användarnamnet 
+                                resource.forEach(user => {
+                                    if (userid == user["id"]){
+                                        let username = user["username"]
+                                        console.log(username)
+                                   
+                                        //på så vis kan vi komma åt användarnamnet som finns i users.json
+                                        let div = document.createElement("div")
+                                        div.innerHTML = `
+                                        <h5>${username} ${date}</h5>
+                                        <p>${comment}</p>
+                                        
+                                        <button class="likeButton" id="likeButton_${id}" name="like" data="${id}">${likes}</button>
+                                        
+                                        `;
+                                        document.querySelector("#hereComesTheComments").appendChild(div);
+                                        document.querySelector("#likeButton_" + id + "").addEventListener("click", createNewLike);
+                            
+                                    }
+                                    
+                                }) 
+                            })
+                        }
                     
                     
                 }
