@@ -54,11 +54,11 @@ function showComment (movie) {
                         div.innerHTML = `
                         <p>${comment}</p>
                         <p>${date}</p>
-                        <button id="likeButton_${id}" name="like" data="${id}">${likes}</button>
+                        <button id="likeButton_${id}" name="like" data="${id}">Likes: ${likes}</button>
                         
                         `;
                         document.querySelector("#hereComesTheComments").appendChild(div);
-                        document.querySelector("#likeButton_" + id + "").addEventListener("click", createNewLike);
+                        document.querySelector("#likeButton_" + id + "").addEventListener("click", createNewLike, {once: true});
                     }
                     
                     
@@ -109,7 +109,6 @@ function createNewLike (event) {
         .then(r => r.json())
         .then( likes => {
             console.log(likes);
-            event.target.innerHTML = likes;
-
+            event.target.innerHTML = `Likes: ${likes} `;
         })
 }

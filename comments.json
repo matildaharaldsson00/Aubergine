@@ -6,6 +6,7 @@
         "date": "12.15.22",
         "userid": 3,
         "likes": 8
+
     },
     {
         "commentid": 2,
@@ -13,7 +14,7 @@
         "comment": "bra fil lejonkungen",
         "date": "12.15.22",
         "userid": 3,
-        "likes": 1
+        "likes": 3
     },
     {
         "commentid": 3,
@@ -22,6 +23,7 @@
         "date": "12.15.22",
         "userid": 1,
         "likes": 7
+
     },
     {
         "commentid": 4,
