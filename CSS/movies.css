@@ -28,12 +28,16 @@ body{
     display: flex;
 } */
 
-#container p{
+/* #container p{
     padding: 0px 20px 0px 20px;
-}
+} */
 
 #container div p{
     padding-right: 20px;
+}
+
+#infoMovie {
+    padding-left: 20px;
 }
 
 /* #container div div{
@@ -65,6 +69,21 @@ h1{
     display: grid;
     grid-gap: 20px;
     grid-template-columns: 1fr 1fr 1fr;
+}
+
+#movieWrapper {
+    display: flex;
+}
+
+/* #conspiracyHeader {
+
+} */
+
+#conspiracy {
+    background-color: #FFFFFC;
+    margin-bottom: 0px;
+    height: fit-content;
+    padding: 15px;
 }
 
 .picture{
@@ -128,11 +147,22 @@ h1{
 
 #formComment{
     max-width: 780px;
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    background-color: #FFFFFC;
+    margin-bottom: 0px;
+    margin-top: 0px;
 }
 
 #comments{
-    width: 780px;
+    width: 700px;
     height: 150px;
+}
+
+#submitComment {
+    width: fit-content;
+    height: 30px;
 }
 
 .allLikeButtons {
@@ -159,9 +189,9 @@ h1{
 
 .commentWrapper {
     background-color: #FFFFFC;
-    margin: 5px;
+    /* margin: 5px; */
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 100px 1fr 90px;
     align-items: center;
 }
 

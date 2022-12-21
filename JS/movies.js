@@ -58,20 +58,21 @@ function showMovie (event) {
                     <p id="goBack">Tillbaka</p>
                         <h1>${title}</h1>
             
-                        <div>
+                        <div id="movieWrapper">
                             <img class="pictureMovie" src="${img}" alt="picture of movie"">
-                            <div>
+                            <div id="infoMovie">
                                 <p>${info}</p>
                                 <p>${premier}</p>
                                 <p>IMDB: ${rating}/10 &#11088</p>
                             </div>
                         </div>
 
-                        <p>"${conspiracy}"</p>
+                        <h2 id="conspiracyHeader">Konspiration</h2>
+                        <p id="conspiracy">"${conspiracy}"</p>
 
                         <form id="formComment" action="" method="post">
                             <div>
-                                <textarea name="comments" id="comments" >Skriv en kommentar!</textarea>
+                                <textarea name="comments" id="comments">Skriv en kommentar!</textarea>
                             </div>
                             <input type="submit" value="Submit" id="submitComment">
                         </form>
