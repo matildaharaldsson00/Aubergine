@@ -16,7 +16,7 @@
     <title>Disney Mystery Club</title>
   </head>
   <body>
-    <div class="paris"> <img src="Bilder\paris.png" alt=""> </div>
+    <div class="paris"> <img src="Bilder\paris.png" alt="" class="hideCastle"> </div>
     <wrapper 
     id="loginPage"  class="hideloginPage">
 
