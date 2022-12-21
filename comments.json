@@ -5,7 +5,7 @@
         "comment": "bra film",
         "date": "12.15.22",
         "userid": 3,
-        "likes": 25
+        "likes": 8
     },
     {
         "commentid": 2,
@@ -29,7 +29,7 @@
         "comment": "test igen",
         "date": "12.15.22",
         "userid": 1,
-        "likes": 0
+        "likes": 7
     },
     {
         "commentid": 5,
@@ -37,6 +37,14 @@
         "comment": "Skriv en kommentar!",
         "date": "12.16.22",
         "userid": 3,
+        "likes": 0
+    },
+    {
+        "commentid": 6,
+        "movieid": 1,
+        "comment": "Nu skriver jag en kommentar f\u00f6r att testa lite!!",
+        "date": "12.21.22",
+        "userid": 4,
         "likes": 0
     }
 ]
