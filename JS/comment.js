@@ -40,27 +40,6 @@ function showComment (movie) {
                         let date = comments[i].date;
                         let likes = comments[i].likes;
                         let id = comments[i].commentid;
-                       // let name = 
-                        /*
-                        let div = document.createElement("div")
-                        div.innerHTML = `
-                        <p>${comment}</p>
-                        <p>${date}</p>
-                        <p>${likes}</p>                    
-                        `;
-                        document.querySelector("#hereComesTheComments").appendChild(div);
-    */
-                        let div = document.createElement("div")
-                        div.classList.add("commentWrapper")
-                        div.innerHTML = `
-                        <p class="commentContent">${comment}</p>
-                        <p class="commentDate">${date}</p>
-                        <button id="likeButton_${id}" class="allLikeButtons" name="like" data="${id}">Likes: ${likes}</button>
-                        
-                        `;
-                        document.querySelector("#hereComesTheComments").appendChild(div);
-                        document.querySelector("#likeButton_" + id + "").addEventListener("click", createNewLike, {once: true});
-                    }
                         //idet på personen som har skrivit kommentaren
                         let userid = comments[i].userid;
                         //fetcha login.php för att få tillgång till alla users 
@@ -78,11 +57,14 @@ function showComment (movie) {
                                         //på så vis kan vi komma åt användarnamnet som finns i users.json
                                         let div = document.createElement("div")
                                         div.innerHTML = `
-                                        <h5>${username} ${date}</h5>
+
+                                            <h4><img src="Bilder/user.png" class="userIcon2"> ${username}</h4>
+                                            <p>${date}</p>
+                         
                                         <p>${comment}</p>
-                                        
-                                        <button class="likeButton" id="likeButton_${id}" name="like" data="${id}">${likes}</button>
-                                        
+                                        <div id="k">
+                                        <button class="likeButton" id="likeButton_${id}" name="like" data="${id}">Likes: ${likes}</button>
+                                        </div>
                                         `;
                                         document.querySelector("#hereComesTheComments").appendChild(div);
                                         document.querySelector("#likeButton_" + id + "").addEventListener("click", createNewLike);
@@ -92,6 +74,7 @@ function showComment (movie) {
                                 }) 
                             })
                         }
+                    }
                     }       
                     
                 )
