@@ -40,6 +40,27 @@ function showComment (movie) {
                         let date = comments[i].date;
                         let likes = comments[i].likes;
                         let id = comments[i].commentid;
+                       // let name = 
+                        /*
+                        let div = document.createElement("div")
+                        div.innerHTML = `
+                        <p>${comment}</p>
+                        <p>${date}</p>
+                        <p>${likes}</p>                    
+                        `;
+                        document.querySelector("#hereComesTheComments").appendChild(div);
+    */
+                        let div = document.createElement("div")
+                        div.classList.add("commentWrapper")
+                        div.innerHTML = `
+                        <p class="commentContent">${comment}</p>
+                        <p class="commentDate">${date}</p>
+                        <button id="likeButton_${id}" class="allLikeButtons" name="like" data="${id}">Likes: ${likes}</button>
+                        
+                        `;
+                        document.querySelector("#hereComesTheComments").appendChild(div);
+                        document.querySelector("#likeButton_" + id + "").addEventListener("click", createNewLike, {once: true});
+                    }
                         //idet på personen som har skrivit kommentaren
                         let userid = comments[i].userid;
                         //fetcha login.php för att få tillgång till alla users 
