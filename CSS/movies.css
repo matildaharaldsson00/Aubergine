@@ -24,9 +24,9 @@ body{
     height: 100vh;
 }
 
-#container div{
+/* #container div{
     display: flex;
-}
+} */
 
 #container p{
     padding: 0px 20px 0px 20px;
@@ -36,11 +36,11 @@ body{
     padding-right: 20px;
 }
 
-#container div div{
+/* #container div div{
     display: flex;
     flex-direction: column;
     justify-content: left;
-}
+} */
 
 #titleh1{
     display: flex;
@@ -100,7 +100,11 @@ h1{
 }
 
 #hereComesTheComments{
-    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: fit-content;
+    width: 800px;
 }
 
 .navbar p {
@@ -130,7 +134,46 @@ h1{
     height: 150px;
 }
 
+.allLikeButtons {
+    grid-column: 3;
+    grid-row: 1;
+    background-color: #FFFFFC;
+    border: 1px solid #12194A;
+    border-radius: 1em;
+    color: #12194A;
+    cursor: pointer;
+    width: fit-content;
+    height: fit-content;
+}
 
+.allLikeButtons:hover {
+    background-color: #12194a43;
+}
 
+.allLikeButtons:focus {
+    background-color: #12194A;
+    border: 1px solid #FFFFFC;
+    color: #FFFFFC;
+}
 
+.commentWrapper {
+    background-color: #FFFFFC;
+    margin: 5px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+}
 
+.commentContent {
+    grid-column: 2;
+    grid-row: 1;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.commentDate {
+    grid-column: 1;
+    grid-row: 1;
+    display: flex;
+    justify-content: flex-start;
+}

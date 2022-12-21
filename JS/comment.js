@@ -51,10 +51,11 @@ function showComment (movie) {
                         document.querySelector("#hereComesTheComments").appendChild(div);
     */
                         let div = document.createElement("div")
+                        div.classList.add("commentWrapper")
                         div.innerHTML = `
-                        <p>${comment}</p>
-                        <p>${date}</p>
-                        <button id="likeButton_${id}" name="like" data="${id}">Likes: ${likes}</button>
+                        <p class="commentContent">${comment}</p>
+                        <p class="commentDate">${date}</p>
+                        <button id="likeButton_${id}" class="allLikeButtons" name="like" data="${id}">Likes: ${likes}</button>
                         
                         `;
                         document.querySelector("#hereComesTheComments").appendChild(div);
