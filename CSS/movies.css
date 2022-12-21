@@ -105,6 +105,12 @@ h1{
     width: 200px;
 }
 
+#k{
+    
+    display: flex;
+    justify-content: end;
+
+}
 .navbar {
     display: flex;
     justify-content: end;
@@ -127,6 +133,19 @@ h1{
     margin-bottom: 20px;
 }
 
+
+#hereComesTheComments div{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    background-color: white;
+}
+
+.userIcon2{
+    height: 15px;
+    width: 15px;
+}
+
 .navbar p {
     float: left;
     display: block;
@@ -147,9 +166,6 @@ h1{
 
 #formComment{
     max-width: 780px;
-    display: flex;
-    flex-direction: row;
-    align-items: end;
     background-color: #FFFFFC;
     margin-bottom: 0px;
     margin-top: 0px;
