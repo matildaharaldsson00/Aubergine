@@ -3,7 +3,7 @@
     display: none;
 }
 
-.hideloginPage{
+.hideloginPage, #n{
     display: block;
 }
 
