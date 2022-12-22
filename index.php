@@ -13,6 +13,7 @@
     <link rel="stylesheet" type="text/css" href="CSS\welcome.css">
     <link rel="stylesheet" type="text/css" href="CSS\index.css">
     <link rel="stylesheet" type="text/css" href="CSS\popUp.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Disney Mystery Club</title>
   </head>
   <body>
