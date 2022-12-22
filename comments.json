@@ -46,5 +46,13 @@
         "date": "12.21.22",
         "userid": 4,
         "likes": 17
+    },
+    {
+        "commentid": 7,
+        "movieid": 1,
+        "comment": "Skriv en kommentar!",
+        "date": "12.22.22",
+        "userid": 7,
+        "likes": 0
     }
 ]
