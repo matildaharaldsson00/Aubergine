@@ -28,5 +28,10 @@
         "id": 7,
         "username": "matilda",
         "password": "test123"
+    },
+    {
+        "id": 8,
+        "username": "hej",
+        "password": "tjabba"
     }
 ]

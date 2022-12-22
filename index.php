@@ -20,7 +20,7 @@
     <div class="paris"> <img src="Bilder\paris.png" alt="" class="hideCastle"> </div>
     <wrapper 
     id="loginPage"  class="hideloginPage">
-
+    <h2 id="n">Välkommen till Mystery Disney Club!</h2>
       <form action="PHP/login.php" id="loginForm" method="GET">
           <h3>Logga in</h3>
           <label>Användarnamn</label>

@@ -52,8 +52,10 @@ function logIn (event) {
                     } 
                 
                     var y = document.querySelector("#loginForm");
-                    if (y.style.display !== "none") {
+                    var n = document.querySelector("#n");
+                    if (y.style.display !== "none" && n.style.display !== "none") {
                         y.style.display = "none";
+                        n.style.display = "none";
                     } 
 
                     document.querySelector("#name2").innerHTML = `Välkomen tillbaka ${username} till Disney Mystery Club`;
