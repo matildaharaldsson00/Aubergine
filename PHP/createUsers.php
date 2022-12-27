@@ -19,6 +19,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
     $requestJSON = file_get_contents("php://input");
     $requestData = json_decode($requestJSON, true);
 
+    // error om request metoden inte är POST
+    // 405 Method Not Allowed
+    if ($requestMethod != "POST") {
+        $error = ["error" => "Invalid HTTP method! (Only POST allowed)"];
+        sendJSON($error, 405);
+    }
+
    
         $highestId = 0;
         foreach ($currentUserData as $user){
@@ -31,6 +38,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
         $username = $requestData["username"];
         $password = $requestData["password"];
 
+        //kontrollerar att nycklarna finns 
+        //annars error 400 bad request
+        if (!isset($requestData["username"], $requestData["password"])) {
+            $error = ["error" => "Bad request!"];
+            sendJSON($error, 400);
+        }
+
         $newUser = ["id" => $id, "username" => $username, "password" => $password];
         $currentUserData[] = $newUser;
         $json = json_encode($currentUserData, JSON_PRETTY_PRINT);
@@ -38,8 +52,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
         header("Content-Type: application/json");
         file_put_contents($filename, $json);
         echo json_encode($newUser);
-    
-    
 
 } 
 

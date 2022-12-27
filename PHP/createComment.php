@@ -17,6 +17,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
     $requestJSON = file_get_contents("php://input");
     $requestData = json_decode($requestJSON, true);
 
+    // error om request metoden inte är POST
+    // 405 Method Not Allowed
+    if ($requestMethod != "POST") {
+        $error = ["error" => "Invalid HTTP method! (Only POST allowed)"];
+        sendJSON($error, 405);
+    }
+
+
     // If one of the parameters is missing 
    //$requestData[$name], $requestData[$breed], $requestData[$age]
     

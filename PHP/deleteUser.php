@@ -13,6 +13,14 @@ if ($_SERVER["REQUEST_METHOD"] == "DELETE"){
 
     $id = $requestData["id"];
 
+    // kontrollerar om nyckeln "id" finns
+    // om inte felmeddelande i $error variabeln 
+    // skickar json-svar med satuskod 400 bad request
+    if (!isset($requestData["id"])) {
+        $error = ["error" => "Bad request!"];
+        sendJSON($error, 400);
+    }
+
         //For each user 
         foreach ($currentUserData as $index => $user){
             $emptyObjekt;
@@ -24,7 +32,10 @@ if ($_SERVER["REQUEST_METHOD"] == "DELETE"){
                 echo json_encode($id);
             }
         }
-      
+    
+    //felmeddelnade och statuskod 404 not found
+    $error = ["error" => "User not found"];
+    sendJSON($error, 404);
 
 }
 
