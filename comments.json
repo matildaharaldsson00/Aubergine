@@ -78,5 +78,21 @@
         "date": "12.29.22",
         "userid": 7,
         "likes": 0
+    },
+    {
+        "commentid": 11,
+        "movieid": 6,
+        "comment": "Skriv en kommentar om att testa",
+        "date": "12.29.22",
+        "userid": 9,
+        "likes": 0
+    },
+    {
+        "commentid": 12,
+        "movieid": 3,
+        "comment": "Bra film!",
+        "date": "12.29.22",
+        "userid": 9,
+        "likes": 0
     }
 ]
