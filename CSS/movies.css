@@ -115,9 +115,9 @@ h1{
     display: flex;
     justify-content: end;
     position: fixed; 
-    background-color: rgb(200, 229, 246);
     top: 0; /* Position the navbar at the top of the page */
     width: 100%; /* Full width */
+    z-index: -1;
 }
     
 #goBack{
@@ -172,7 +172,7 @@ h1{
 }
 
 #comments{
-    width: 700px;
+    width: 750px;
     height: 150px;
 }
 
