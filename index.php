@@ -75,12 +75,11 @@
             <div class="modal-content">
                 <span class="close">&times;</span>
                 <div id="popUpUser"></div>
-                  <div class ="deleteButton"></div>
-                  <input id = "logOut" type="button" value="Logga ut" onClick="window.location.reload(true)">
-                  
+                <div class ="deleteButton"></div>
             </div>
           </div>
-        </div>
+ 
+      </div>
 
 
     <!-- /////// 
@@ -121,6 +120,5 @@
     <script src="JS/movies.js"></script>
     <script src="JS/comment.js"></script>
     <script src="JS/popUp.js"></script>
- 
   </body>
 </html>

@@ -34,9 +34,13 @@ function popUp (){
   
 
   <label>Ändra Lösenord</label>
-  <input type="password" value="${userGlobal["password"]}" id="updatePassword">
-  <input id ="newsubmit" type="button" value="Uppdatera lösenord">
-  <input id ="_${userGlobal["id"]}" type="button" value="Radera konto">
+  <input type="text" value="${userGlobal["password"]}" id="updatePassword">
+
+  <div class="popupButtons">
+    <input id ="newsubmit" class="User" type="button" value="Uppdatera lösenord">
+    <input id ="_${userGlobal["id"]}" class="deleteUser" type="button" value="Radera konto">
+    <input id = "logOut" class="User" type="button" value="Logga ut" onClick="window.location.reload(true)">
+  </div>
   `;
 
   //edit button
@@ -61,18 +65,29 @@ function deleteUser(event) {
 
         for (let i = 0; i < user.length; i++) {
           if (user[i].id == buttonId) {
-    
+  
+            if (confirm('Are you sure you want to delete your account')) {
+              // delete it!
               fetch("PHP/deleteUser.php", {
-                  method: "DELETE",
-                  headers: {'Content-Type': 'application/json'},
-                  body: JSON.stringify({id: buttonId})
+                method: "DELETE",
+                headers: {'Content-Type': 'application/json'},
+                body: JSON.stringify({id: buttonId})
               })
-                  .then(r => r.json())
-                  .then(user => {
-                    user = userGlobal["username"]
-                    alert(`${user} ditt konto raderades nyss`); 
-                    window.location.reload(true);
-                  })  
+                .then(r => r.json())
+                .then(user => {
+                user = userGlobal["username"]
+                alert(`${user} ditt konto raderades nyss`); 
+                window.location.reload(true);
+                })
+  
+              } else {
+                  // Do nothing!
+                  console.log('Do nothing');
+              }
+                    //user = userGlobal["username"]
+                    //alert(`${user} ditt konto raderades nyss`); 
+                   // window.location.reload(true);
+                   
           }
       }
 
