@@ -21,7 +21,7 @@
         "comment": "test",
         "date": "12.15.22",
         "userid": 1,
-        "likes": 26
+        "likes": 28
     },
     {
         "commentid": 4,
@@ -102,5 +102,13 @@
         "date": "12.29.22",
         "userid": 7,
         "likes": 0
+    },
+    {
+        "commentid": 14,
+        "movieid": 1,
+        "comment": "Hoppas allt fungerar! Testar wooho!",
+        "date": "01.03.23",
+        "userid": 6,
+        "likes": 4
     }
 ]
