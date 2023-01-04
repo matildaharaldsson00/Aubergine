@@ -110,5 +110,13 @@
         "date": "01.03.23",
         "userid": 6,
         "likes": 4
+    },
+    {
+        "commentid": 15,
+        "movieid": 1,
+        "comment": "Hej",
+        "date": "01.04.23",
+        "userid": 6,
+        "likes": 0
     }
 ]
