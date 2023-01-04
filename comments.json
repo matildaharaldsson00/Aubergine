@@ -53,54 +53,38 @@
         "comment": "Skriv en kommentar!",
         "date": "12.22.22",
         "userid": 7,
-        "likes": 0
+        "likes": 1
     },
     {
         "commentid": 8,
         "movieid": 1,
-        "comment": "Hejsan hejsan",
-        "date": "12.22.22",
-        "userid": 6,
-        "likes": 7
+        "comment": "\u00c4lskar Aladdin s\u00e5 mycket<3",
+        "date": "12.29.22",
+        "userid": 9,
+        "likes": 0
     },
     {
         "commentid": 9,
-        "movieid": 1,
-        "comment": "test",
+        "movieid": 5,
+        "comment": "Heja Simba!!!",
         "date": "12.29.22",
-        "userid": 7,
+        "userid": 12,
         "likes": 0
     },
     {
         "commentid": 10,
         "movieid": 2,
-        "comment": "test",
+        "comment": "Skriver en kommentar om trassel",
         "date": "12.29.22",
-        "userid": 7,
+        "userid": 9,
         "likes": 0
     },
     {
         "commentid": 11,
-        "movieid": 6,
-        "comment": "Skriv en kommentar om att testa",
-        "date": "12.29.22",
-        "userid": 9,
-        "likes": 0
-    },
-    {
-        "commentid": 12,
-        "movieid": 3,
-        "comment": "Bra film!",
-        "date": "12.29.22",
-        "userid": 9,
-        "likes": 0
-    },
-    {
-        "commentid": 13,
         "movieid": 1,
-        "comment": "Skriv en kommentar!",
-        "date": "12.29.22",
-        "userid": 7,
+        "comment": "Hej Januari",
+        "date": "01.04.23",
+        "userid": 9,
         "likes": 0
     },
     {

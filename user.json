@@ -46,7 +46,12 @@
     },
     {
         "id": 11,
-        "username": "",
-        "password": ""
+        "username": "oli",
+        "password": "Sthhj"
+    },
+    {
+        "id": 12,
+        "username": "testkonto",
+        "password": "josl"
     }
 ]

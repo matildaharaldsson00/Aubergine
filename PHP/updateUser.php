@@ -19,7 +19,8 @@ if ($_SERVER["REQUEST_METHOD"] == "PUT"){
                 array_splice($currentUserData, $index, 1);
                 $users = ["id" => $requestData["id"], "username" => $requestData["username"], "password" => $requestData["password"]];
                 $currentUserData[] = $users;
-                //sorteras i ordning efter idet. 1,2,3 osv. Annars behåller hunden inte sin "plats".
+                //sorteras i ordning efter idet. 1,2,3 osv. Annars behåller användaren inte sin "plats".
+                //den sorterar en array baserat på den FÖRSTA nyckelns innehåll
                 array_multisort($currentUserData);
                 file_put_contents($filename, json_encode($currentUserData, JSON_PRETTY_PRINT));
                 echo json_encode($users);

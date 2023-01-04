@@ -66,18 +66,18 @@
     <wrapper class="allMovies" class="hideMovies">
 
     <div class="navbar">
-          <p id="newUser"></p>
-          <img src="Bilder/user.png" id="myBtn" class="userIcon">
-
-         
-          <div id="myModal" class="modal">
+      <img src="Bilder/home.png" id="goBack" class="homeIcon">
+      <p id="newUser"></p>
+      <img src="Bilder/user.png" id="myBtn" class="userIcon">
+          
+      <div id="myModal" class="modal">
     <!-- Modal content -->
-            <div class="modal-content">
-                <span class="close">&times;</span>
-                <div id="popUpUser"></div>
-                <div class ="deleteButton"></div>
-            </div>
-          </div>
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <div id="popUpUser"></div>
+          <div class ="deleteButton"></div>
+        </div>
+      </div>
  
       </div>
 
