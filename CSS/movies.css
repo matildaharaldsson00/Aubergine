@@ -125,6 +125,12 @@ h1{
     height: 50px;
     width: 50px;
     cursor: pointer;
+    transition: transform 0.4s;
+}
+
+#goBack:hover {
+    transition: 0.4s;
+    transform: scale(1.2);
 }
 
 #hereComesTheComments{
@@ -167,6 +173,12 @@ h1{
     height: 50px;
     width: 50px;
     cursor: pointer;
+    transition: transform 0.4s;
+}
+
+.userIcon:hover {
+    transition: 0.4s;
+    transform: scale(1.2);
 }
 
 #formComment{
