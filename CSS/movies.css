@@ -50,6 +50,8 @@ body{
 h1{
     display: flex;
     justify-content: center;
+    margin-bottom: 0px;
+    font-size: 50px;
     padding-top: 20px;
 }
 
@@ -61,12 +63,20 @@ h1{
 
 #movieWrapper {
     display: flex;
+    background-color: #FFFFFC;
 }
 
+#conspiracyHeader {
+    color: black;
+    background-color: #FFFFFC;
+    margin: 0;
+    padding-left: 15px;
+} 
 
 #conspiracy {
     background-color: #FFFFFC;
     margin-bottom: 0px;
+    margin-top: 0px;
     height: fit-content;
     padding: 15px;
     margin-top: 0;
@@ -86,7 +96,7 @@ h1{
 }
 
 .pictureMovie{
-    padding: 0px 0px 0px 20px;
+    padding: 20px 0px 20px 20px;
     height: 250px;
     width: 200px;
 }
