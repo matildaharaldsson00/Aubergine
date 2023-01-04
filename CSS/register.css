@@ -43,6 +43,19 @@ h3 {
 #conspiracyTheoriesButton, #conspiracyTheoriesButton2{
 height: 150px;
 width: 300px;
+padding: 20px;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+font-size: large;
+background: #eee; 
+margin: 20px auto;
+cursor:pointer;
+box-shadow: 7px 8px 20px 2px rgba(0, 0, 0, 0.436);
+transition: transform 0.4s;
+}
+
+#conspiracyTheoriesButton, #conspiracyTheoriesButton2:hover {
+    transition: 0.4s;
+    transform: scale(1.1);
 }
 
 #movies{
