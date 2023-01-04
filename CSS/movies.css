@@ -122,6 +122,9 @@ h1{
     
 #goBack{
     padding: 14px 16px;
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
 }
 
 #hereComesTheComments{
@@ -144,6 +147,7 @@ h1{
 .userIcon2{
     height: 15px;
     width: 15px;
+    cursor: pointer;
 }
 
 .navbar p {
@@ -162,6 +166,7 @@ h1{
     padding: 14px 16px;
     height: 50px;
     width: 50px;
+    cursor: pointer;
 }
 
 #formComment{
@@ -176,7 +181,7 @@ h1{
     height: 150px;
 }
 
-#submitComment {
+#submitComment, #sortComment {
     width: fit-content;
     height: 30px;
 }

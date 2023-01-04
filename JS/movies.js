@@ -55,7 +55,6 @@ function showMovie (event) {
                     let div = document.createElement("div")
                     div.innerHTML = `
                     <div id="container">
-                    <p id="goBack">Tillbaka</p>
                         <h1>${title}</h1>
             
                         <div id="movieWrapper">
@@ -75,6 +74,7 @@ function showMovie (event) {
                                 <textarea name="comments" id="comments">Skriv en kommentar!</textarea>
                             </div>
                             <input type="submit" value="Submit" id="submitComment">
+                            
                         </form>
 
                         <div id="hereComesTheComments">
@@ -88,6 +88,7 @@ function showMovie (event) {
 
                     document.querySelector("#submitComment").addEventListener("click", CreateNewComment);
                     document.querySelector("#goBack").addEventListener("click", goBack);
+                   // document.querySelector("#sortComment").addEventListener("click", sortComments)
                     //visa kommentarerna
                     showComment (movieGlobal);
                     
