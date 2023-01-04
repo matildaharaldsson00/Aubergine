@@ -67,9 +67,10 @@
 
     <div class="navbar">
       <img src="Bilder/home.png" id="goBack" class="homeIcon">
-      <p id="newUser"></p>
-      <img src="Bilder/user.png" id="myBtn" class="userIcon">
-          
+      <div>
+        <p id="newUser"></p>
+        <img src="Bilder/user.png" id="myBtn" class="userIcon">
+      </div>  
       <div id="myModal" class="modal">
     <!-- Modal content -->
         <div class="modal-content">
@@ -79,7 +80,7 @@
         </div>
       </div>
  
-      </div>
+    </div>
 
 
     <!-- /////// 
