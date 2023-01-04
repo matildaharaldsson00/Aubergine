@@ -12,25 +12,17 @@ body{
 }
 
 #currentMovie{
-    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 #container{
-    padding-top: 150px;
+    margin-top: 150px;
     width: 800px;
     height: 100vh;
+    background-color: white;
 }
-
-/* #container div{
-    display: flex;
-} */
-
-/* #container p{
-    padding: 0px 20px 0px 20px;
-} */
 
 #container div p{
     padding-right: 20px;
@@ -40,11 +32,6 @@ body{
     padding-left: 20px;
 }
 
-/* #container div div{
-    display: flex;
-    flex-direction: column;
-    justify-content: left;
-} */
 
 #titleh1{
     display: flex;
@@ -63,6 +50,7 @@ body{
 h1{
     display: flex;
     justify-content: center;
+    padding-top: 20px;
 }
 
 #movieGrid{
@@ -75,15 +63,13 @@ h1{
     display: flex;
 }
 
-/* #conspiracyHeader {
-
-} */
 
 #conspiracy {
     background-color: #FFFFFC;
     margin-bottom: 0px;
     height: fit-content;
     padding: 15px;
+    margin-top: 0;
 }
 
 .picture{
@@ -105,19 +91,22 @@ h1{
     width: 200px;
 }
 
+h2{
+    padding: 0px 0px 0px 20px;
+    margin-bottom: 0px;
+}
+
 #k{
-    
     display: flex;
     justify-content: end;
-
 }
 .navbar {
-    display: flex;
-    justify-content: end;
     position: fixed; 
-    top: 0; /* Position the navbar at the top of the page */
-    width: 100%; /* Full width */
-  
+    top: 0;  /*Position the navbar at the top of the page*/
+    width: 100%; /*Full width */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
     
 #goBack{
