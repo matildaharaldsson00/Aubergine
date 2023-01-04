@@ -129,8 +129,12 @@ h2{
 #hereComesTheComments div{
     padding-left: 20px;
     padding-right: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
     background-color: white;
+}
+
+#hereComesTheComments > div{
+    border-bottom: black solid 1px;
 }
 
 .userIcon2{
