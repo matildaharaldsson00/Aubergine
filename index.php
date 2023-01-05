@@ -32,7 +32,7 @@
 
       <div id="WelcomeBack">
           <div><style>
-  h2 {color:white;}
+  h2 {color:black;}
 </style>
               <h2  id="name2"></h2>
               <button id="conspiracyTheoriesButton2">Utforska konspirationsteorier här!</button>
@@ -100,7 +100,7 @@
 
     
       <div class="center">
-        <style> h1 {color:white; padding-bottom:35px;} </style>
+        <style> h1 {color:black; padding-bottom:35px;} </style>
         <h1 id="titleh1">Utforska Konspirationsteorier om Disney</h1>
         <div id="movieGrid"></div>
       </div>
