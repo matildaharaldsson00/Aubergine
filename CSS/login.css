@@ -30,6 +30,7 @@ input {
 
 #submitUser {
     width: 80px;
+    cursor: pointer;
 }
  
 h3 {
@@ -38,10 +39,11 @@ h3 {
 }
 
 #registerNewUser {
-    background-color: #12194a7a;
+    background-color: transparent;
     color: black;
-    border: solid 1px #12194A;
     cursor: pointer;
+    border: none;
+    font-weight: bold;
 }
 
 #WelcomeBack{
