@@ -72,7 +72,7 @@ function showMovie (event) {
                             <div>
                                 <textarea name="comments" id="comments">Skriv en kommentar!</textarea>
                             </div>
-                            <input type="submit" value="Submit" id="submitComment">
+                            <input type="submit" value="Skicka kommentar" id="submitComment">
                             
                         </form>
 

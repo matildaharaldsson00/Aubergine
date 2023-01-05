@@ -21,7 +21,7 @@ body{
     margin-top: 150px;
     width: 800px;
     height: 100vh;
-    background-color: white;
+    background-color: #bdc0ea;
 }
 
 #container div p{
@@ -64,18 +64,18 @@ h1{
 
 #movieWrapper {
     display: flex;
-    background-color: #FFFFFC;
+    background-color: #bdc0ea;
 }
 
 #conspiracyHeader {
     color: black;
-    background-color: #FFFFFC;
+    background-color: #bdc0ea;
     margin: 0;
     padding-left: 15px;
 } 
 
 #conspiracy {
-    background-color: #FFFFFC;
+    background-color: #bdc0ea;
     margin-bottom: 0px;
     margin-top: 0px;
     height: fit-content;
@@ -119,6 +119,7 @@ h2{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: white;
 }
     
 #goBack{
@@ -152,7 +153,8 @@ h2{
 }
 
 #hereComesTheComments > div{
-    border-bottom: black solid 1px;
+    border: solid 1px #bdc0ea;
+    margin-bottom: 4px;
 }
 
 .userIcon2{
@@ -196,6 +198,7 @@ h2{
 #comments{
     width: 700px;
     height: 150px;
+    box-shadow: 7px 8px 20px 2px rgba(0, 0, 0, 0.436);
 }
 
 #submitComment, #sortComment {
