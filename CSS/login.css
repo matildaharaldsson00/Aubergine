@@ -51,6 +51,7 @@ h3 {
     background-color: #12194a7a;
     color: black;
     border: solid 1px #12194A;
+    cursor: pointer;
 }
 
 #WelcomeBack{
