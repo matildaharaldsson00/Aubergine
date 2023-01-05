@@ -18,8 +18,8 @@
   margin: 15% auto; /* 15% from the top and centered */
   padding: 20px;
   border: 1px solid #888;
-  width: 40%; /* Could be more or less, depending on screen size */
-  height: 30%;
+  width: 300px; /* Could be more or less, depending on screen size */
+  height: 250px;
 }
   
 /* The Close Button */
@@ -42,6 +42,8 @@
 
 .popupButtons{
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .popupButtons input{
@@ -65,11 +67,13 @@
 .deleteUser:hover{
   color: rgb(211, 79, 79);
   background-color: white;
+  cursor: pointer; 
 }
 
 .User:hover{
   color: rgb(115, 159, 230);
   background-color: white;
+  cursor: pointer;
 }
 
 #updatePassword{
@@ -77,6 +81,11 @@
   color: gray;
 }
 
-input{
-  width: 98%;
+
+.deleteButton{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
+
