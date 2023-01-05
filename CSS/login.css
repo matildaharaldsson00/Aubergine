@@ -13,6 +13,9 @@ body {
 
 
 form {
+    max-width: 400px;
+    padding: 20px;
+    background: #A2A5D5;
     max-width: 550px;
     padding: 45px;
     background: #A2A5D5;;
