@@ -41,6 +41,7 @@
     </wrapper>
 
     <wrapper id="registerPage" class="hideregisterPage">
+    <h2 id="b">Välkommen till Mystery Disney Club!</h2>
       <main>
           <div>
               <form id="create" class="hidden" method="POST">

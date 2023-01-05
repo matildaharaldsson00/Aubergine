@@ -95,8 +95,10 @@ function CreateNewUser (event) {
             } 
         
             var y = document.querySelector("#create");
-            if (y.style.display !== "none") {
+            var b = document.querySelector("#b");
+            if (y.style.display !== "none" && b.style.display !== "none") {
                 y.style.display = "none";
+                b.style.display = "none";
             } 
             document.querySelector("#name").innerHTML = `Välkomen ${username} till Disney Mystery Club`;
             console.log(username)
