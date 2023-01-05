@@ -100,7 +100,7 @@ function CreateNewUser (event) {
                 y.style.display = "none";
                 b.style.display = "none";
             } 
-            document.querySelector("#name").innerHTML = `Välkomen ${username} till Disney Mystery Club`;
+            document.querySelector("#name").innerHTML = `Välkommen ${username} till Disney Mystery Club`;
             console.log(username)
         
             document.querySelector("#newUser").innerHTML = `${username}`;
