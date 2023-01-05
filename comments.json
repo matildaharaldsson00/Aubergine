@@ -77,7 +77,7 @@
         "comment": "Skriver en kommentar om trassel",
         "date": "12.29.22",
         "userid": 9,
-        "likes": 0
+        "likes": 1
     },
     {
         "commentid": 11,
@@ -101,6 +101,14 @@
         "comment": "Hej",
         "date": "01.04.23",
         "userid": 6,
+        "likes": 0
+    },
+    {
+        "commentid": 16,
+        "movieid": 2,
+        "comment": "bra film!",
+        "date": "01.05.23",
+        "userid": 7,
         "likes": 0
     }
 ]
