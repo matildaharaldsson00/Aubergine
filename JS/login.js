@@ -53,7 +53,7 @@ function logIn (event) {
                         n.style.display = "none";
                     } 
 
-                    document.querySelector("#name2").innerHTML = `Välkomen tillbaka ${username} till Disney Mystery Club`;
+                    document.querySelector("#name2").innerHTML = `Välkommen tillbaka ${username} till Disney Mystery Club`;
                     console.log(username)
 
                     document.querySelector("#newUser").innerHTML = `${username}`;

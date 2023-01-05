@@ -53,6 +53,7 @@ h1{
     margin-bottom: 0px;
     font-size: 50px;
     padding-top: 20px;
+    color: black;
 }
 
 #movieGrid{
@@ -104,6 +105,7 @@ h1{
 h2{
     padding: 0px 0px 0px 20px;
     margin-bottom: 0px;
+    font-size: 35px;
 }
 
 #k{
@@ -192,7 +194,7 @@ h2{
 }
 
 #comments{
-    width: 750px;
+    width: 700px;
     height: 150px;
 }
 

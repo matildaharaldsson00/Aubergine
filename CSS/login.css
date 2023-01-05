@@ -8,12 +8,15 @@ body {
 #n, #b{
     text-align: center;
     color:black;
-    font-size: 34px;
+    font-size: 45px;
 }
 
 
 form {
-    max-width: 600px;
+    max-width: 400px;
+    padding: 20px;
+    background: #A2A5D5;
+    max-width: 550px;
     padding: 45px;
     background: #A2A5D5;
     margin: 20px auto;
@@ -34,6 +37,7 @@ input {
 
 #submitUser {
     width: 80px;
+    cursor: pointer;
     color: white;
     background-color:#A2A5D5;
     transition: 0.3s;
@@ -46,8 +50,10 @@ h3 {
 
 #registerNewUser {
     background-color: transparent;
-    color: blue;
+    color: black;
+    cursor: pointer;
     border: none;
+    font-weight: bold;
 }
 
 #WelcomeBack{
