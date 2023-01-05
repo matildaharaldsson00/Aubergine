@@ -25,7 +25,7 @@
           <input type="text" name="username" id="username" placeholder="Användarnamn">
           <label>Lösenord</label>
           <input type="password" name="password" id="password" placeholder="Lösenord">
-          <input type="submit" value="Send" id="submitUser" name="loginSubmit">
+          <input type="submit" value="Logga in" id="submitUser" name="loginSubmit">
           <input type="submit" value="Skapa konto" id="registerNewUser">
           <p id="message2"></p>
       </form>
