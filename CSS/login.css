@@ -37,6 +37,7 @@ input {
 
 #submitUser {
     width: 80px;
+    cursor: pointer;
     color: white;
     background-color:#A2A5D5;
     transition: 0.3s;
@@ -48,10 +49,11 @@ h3 {
 }
 
 #registerNewUser {
-    background-color: #12194a7a;
+    background-color: transparent;
     color: black;
-    border: solid 1px #12194A;
     cursor: pointer;
+    border: none;
+    font-weight: bold;
 }
 
 #WelcomeBack{
