@@ -37,7 +37,7 @@
     {
         "id": 9,
         "username": "Olivia",
-        "password": "Stampe12"
+        "password": "Stampe123"
     },
     {
         "id": 10,
@@ -53,5 +53,10 @@
         "id": 12,
         "username": "kmo",
         "password": "nip"
+    },
+    {
+        "id": 13,
+        "username": "Oliv",
+        "password": "Stampe"
     }
 ]

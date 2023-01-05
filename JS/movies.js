@@ -40,7 +40,6 @@ function showMovie (event) {
             .then( movie => {
                 movieGlobal = movie[id-1]
                 console.log(id)
-                
                 document.getElementById("currentMovie").innerHTML = "";
                 //veriablar för nycklarna i movies.js
                 //var tvungen att -1 för annars kom filmen efter den man klickar på
