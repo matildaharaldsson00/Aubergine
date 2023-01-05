@@ -100,6 +100,7 @@
 
     
       <div class="center">
+        <style> h1 {color:white; padding-bottom:35px;} </style>
         <h1 id="titleh1">Utforska Konspirationsteorier om Disney</h1>
         <div id="movieGrid"></div>
       </div>
