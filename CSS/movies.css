@@ -199,6 +199,7 @@ h2{
 #submitComment, #sortComment {
     width: fit-content;
     height: 30px;
+    cursor: pointer;
 }
 
 .commentWrapper {
@@ -225,4 +226,8 @@ h2{
 
 svg {
     width: 15px;
+}
+
+.likeButton {
+    cursor: pointer;
 }
