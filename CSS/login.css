@@ -18,7 +18,7 @@ form {
     background: #A2A5D5;
     max-width: 550px;
     padding: 45px;
-    background: #A2A5D5;;
+    background: #A2A5D5;
     margin: 20px auto;
     box-shadow: 7px 8px 20px 2px rgba(0, 0, 0, 0.436);
 }
@@ -26,10 +26,21 @@ form {
 input {
     width: 100%;
     margin-bottom: 10px;
+    border: 0;
+}
+
+#submitUser:hover {
+    width: 80px;
+    background-color: white;
+    color:#A2A5D5;
+
 }
 
 #submitUser {
     width: 80px;
+    color: white;
+    background-color:#A2A5D5;
+    transition: 0.3s;
 }
  
 h3 {
