@@ -61,3 +61,16 @@ transition: transform 0.4s;
     display: none;
 }
 
+#submit:hover {
+    width: 80px;
+    background-color: white;
+    color:#A2A5D5;
+
+}
+
+#submit {
+    width: 80px;
+    color: white;
+    background-color:#A2A5D5;
+    transition: 0.3s;
+}
