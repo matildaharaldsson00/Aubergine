@@ -31,9 +31,7 @@
       </form>
 
       <div id="WelcomeBack">
-          <div><style>
-  h2 {color:white;}
-</style>
+          <div>
               <h2  id="name2"></h2>
               <button id="conspiracyTheoriesButton2">Utforska konspirationsteorier här!</button>
           </div>
@@ -83,22 +81,6 @@
  
     </div>
 
-
-    <!-- /////// 
-    <div class="navbar">
-      <input id = "logOut" type="button" value="Logga ut" onClick="window.location.reload(true)">
-        <div class="profileOverlay" onclick="showPopup()">Click me!
-        <span class ="popupContent" id = "popupItem">Hello, change password</span>  
-      </div>
-      
-
-
-          <p id="newUser"></p>
-          <img src="Bilder/user.png" id="userIcon">
-        </div>
-      </div>-->
-      
-
     
       <div class="center">
         <style> h1 {color:white; padding-bottom:35px;} </style>
@@ -119,7 +101,6 @@
 
     <script src="JS/index.js"></script>
     <script src="JS/login.js"></script>
-    <script src="JS/profile.js"></script>
     <script src="JS/movies.js"></script>
     <script src="JS/comment.js"></script>
     <script src="JS/popUp.js"></script>

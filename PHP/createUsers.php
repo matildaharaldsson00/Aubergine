@@ -31,12 +31,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
         $username = $requestData["username"];
         $password = $requestData["password"];
 
-        //kontrollerar att nycklarna finns 
-        //annars error 400 bad request
-        if (!isset($requestData["username"], $requestData["password"])) {
-            $error = ["error" => "Bad request!"];
-            sendJSON($error, 400);
-        }
 
         $newUser = ["id" => $id, "username" => $username, "password" => $password];
         $currentUserData[] = $newUser;

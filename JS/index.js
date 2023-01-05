@@ -53,11 +53,10 @@ function CreateNewUser (event) {
     fetch(request1)
     .then(r => r.json())
     .then(resource => {
-        console.log(resource)
         resource.forEach(user => {
             if(username == user["username"] || password == user["password"]) {
                 foundUser = user;
-                console.log(user)
+                console.log("username or password is already taken")
             } 
             
         })
@@ -70,9 +69,6 @@ function CreateNewUser (event) {
         
             
         } else {
-            console.log("good job")
-
-            
             const request = new Request("PHP/createUsers.php"); 
             fetch(request, {
             body: JSON.stringify({username: username, password: password}),
@@ -85,7 +81,6 @@ function CreateNewUser (event) {
                     console.log(resultat)
                     document.querySelector("#createUsername").value = "";
                     document.querySelector("#createPassword").value = "";
-
                     popUp();
                 })
         

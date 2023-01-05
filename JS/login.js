@@ -8,8 +8,6 @@ document.getElementById("registerNewUser").addEventListener("click", onClick);
 function onClick(event) {
     //Ser till att sidan inte laddas om när man skickar ett formulär.
     event.preventDefault()
-   
-    console.log("hej")
     var x = document.querySelector(".hideregisterPage");
     if (x.style.display !== "block") {
         x.style.display = "block";
@@ -20,8 +18,6 @@ function onClick(event) {
         y.style.display = "none";
     } 
 }
-
-
 
 //==================================================================
 //when user clicks sumbit the function logIn is called to check if the user exists in the database
@@ -40,7 +36,6 @@ function logIn (event) {
     fetch(request)
         .then(r => r.json())
         .then(resource => {
-            console.log(resource)
             resource.forEach(user => {
                 if(username == user.username && password == user.password) {
                     console.log(user)
