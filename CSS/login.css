@@ -48,9 +48,9 @@ h3 {
 }
 
 #registerNewUser {
-    background-color: transparent;
-    color: blue;
-    border: none;
+    background-color: #12194a7a;
+    color: black;
+    border: solid 1px #12194A;
 }
 
 #WelcomeBack{
