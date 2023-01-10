@@ -2,113 +2,33 @@
     {
         "commentid": 1,
         "movieid": 1,
-        "comment": "bra film",
-        "date": "12.15.22",
-        "userid": 3,
-        "likes": 9
+        "comment": "\u00c4lskar denna filmen! Riktigt sp\u00e4nnande teori! H\u00e5ller helt med.",
+        "date": "01.10.23",
+        "userid": 1,
+        "likes": 0
     },
     {
         "commentid": 2,
-        "movieid": 5,
-        "comment": "bra fil lejonkungen",
-        "date": "12.15.22",
-        "userid": 3,
-        "likes": 3
+        "movieid": 3,
+        "comment": "L\u00f6jlig teori.... K\u00e4nns l\u00e5ngs\u00f6kt att hon fotograferar turister av den anlednigen",
+        "date": "01.10.23",
+        "userid": 1,
+        "likes": 0
     },
     {
         "commentid": 3,
-        "movieid": 1,
-        "comment": "test",
-        "date": "12.15.22",
+        "movieid": 5,
+        "comment": "Lejonkungen \u00e4r den absolut b\u00e4sta filmen! Det var intressant att h\u00f6ra att inget annat djur f\u00f6rutom lejon som \u00e4ter lejon.",
+        "date": "01.10.23",
         "userid": 1,
-        "likes": 28
+        "likes": 0
     },
     {
         "commentid": 4,
-        "movieid": 3,
-        "comment": "test igen",
-        "date": "12.15.22",
-        "userid": 1,
-        "likes": 7
-    },
-    {
-        "commentid": 5,
         "movieid": 6,
-        "comment": "Skriv en kommentar!",
-        "date": "12.16.22",
-        "userid": 3,
-        "likes": 0
-    },
-    {
-        "commentid": 6,
-        "movieid": 1,
-        "comment": "Nu skriver jag en kommentar f\u00f6r att testa lite!!",
-        "date": "12.21.22",
-        "userid": 4,
-        "likes": 17
-    },
-    {
-        "commentid": 7,
-        "movieid": 1,
-        "comment": "Skriv en kommentar!",
-        "date": "12.22.22",
-        "userid": 7,
-        "likes": 1
-    },
-    {
-        "commentid": 8,
-        "movieid": 1,
-        "comment": "\u00c4lskar Aladdin s\u00e5 mycket<3",
-        "date": "12.29.22",
-        "userid": 9,
-        "likes": 0
-    },
-    {
-        "commentid": 9,
-        "movieid": 5,
-        "comment": "Heja Simba!!!",
-        "date": "12.29.22",
-        "userid": 12,
-        "likes": 0
-    },
-    {
-        "commentid": 10,
-        "movieid": 2,
-        "comment": "Skriver en kommentar om trassel",
-        "date": "12.29.22",
-        "userid": 9,
-        "likes": 1
-    },
-    {
-        "commentid": 11,
-        "movieid": 1,
-        "comment": "Hej Januari",
-        "date": "01.04.23",
-        "userid": 9,
-        "likes": 0
-    },
-    {
-        "commentid": 14,
-        "movieid": 1,
-        "comment": "Hoppas allt fungerar! Testar wooho!",
-        "date": "01.03.23",
-        "userid": 6,
-        "likes": 4
-    },
-    {
-        "commentid": 15,
-        "movieid": 1,
-        "comment": "Hej",
-        "date": "01.04.23",
-        "userid": 6,
-        "likes": 0
-    },
-    {
-        "commentid": 16,
-        "movieid": 2,
-        "comment": "bra film!",
-        "date": "01.05.23",
-        "userid": 7,
+        "comment": "L\u00e4skig teori.. Jag som vill tro att Peter Pan \u00e4r den sn\u00e4lla karakt\u00e4ren",
+        "date": "01.10.23",
+        "userid": 1,
         "likes": 0
     }
 ]

@@ -1,4 +1,7 @@
 <?php
+
+//Vi valde att behålla llikes.php och likes.json för att visa att vi förökte
+//Det var svårt att klura ut på egen hand så vi hoppade över den biten. 
 ini_set("display_errors", 1);
 $filename = "../comments.json";
 
