@@ -5,7 +5,7 @@
         "comment": "\u00c4lskar denna filmen! Riktigt sp\u00e4nnande teori! H\u00e5ller helt med.",
         "date": "01.10.23",
         "userid": 1,
-        "likes": 0
+        "likes": 2
     },
     {
         "commentid": 2,
@@ -29,6 +29,22 @@
         "comment": "L\u00e4skig teori.. Jag som vill tro att Peter Pan \u00e4r den sn\u00e4lla karakt\u00e4ren",
         "date": "01.10.23",
         "userid": 1,
+        "likes": 1
+    },
+    {
+        "commentid": 5,
+        "movieid": 1,
+        "comment": "Tycker teorin \u00e4r lite bristf\u00e4llig :\/ Zombieapokalyps... Seri\u00f6st liksom...",
+        "date": "01.10.23",
+        "userid": 2,
         "likes": 0
+    },
+    {
+        "commentid": 6,
+        "movieid": 8,
+        "comment": "S\u00e5\u00e5\u00e5 bra film! Och v\u00e4ldigt rolig och intressant teori. ",
+        "date": "01.10.23",
+        "userid": 2,
+        "likes": 4
     }
 ]
