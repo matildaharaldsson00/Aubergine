@@ -73,7 +73,7 @@
         <img src="Bilder/user.png" id="myBtn" class="userIcon">
       </div>  
       <div id="myModal" class="modal">
-    <!-- Modal content -->
+    
         <div class="modal-content">
           <span class="close">&times;</span>
           <div id="popUpUser"></div>
