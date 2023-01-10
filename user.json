@@ -1,62 +1,7 @@
 [
     {
         "id": 1,
-        "username": "Sam",
-        "password": "Oliviahej"
-    },
-    {
-        "id": 2,
-        "username": "Elias",
-        "password": "LoveOlivia123"
-    },
-    {
-        "id": 4,
-        "username": "olivi",
-        "password": "ciro1"
-    },
-    {
-        "id": 5,
-        "username": "test",
-        "password": "olivia2001"
-    },
-    {
-        "id": 6,
-        "username": "Jocke Bejram",
-        "password": "hejhej123"
-    },
-    {
-        "id": 7,
-        "username": "matilda",
-        "password": "test123"
-    },
-    {
-        "id": 8,
-        "username": "hej",
-        "password": "tjabba"
-    },
-    {
-        "id": 9,
         "username": "Olivia",
         "password": "Stampe123"
-    },
-    {
-        "id": 10,
-        "username": "matte",
-        "password": "12345"
-    },
-    {
-        "id": 11,
-        "username": "oli",
-        "password": "Sthhj"
-    },
-    {
-        "id": 12,
-        "username": "kmo",
-        "password": "nip"
-    },
-    {
-        "id": 13,
-        "username": "Oliv",
-        "password": "Stampe"
     }
 ]
